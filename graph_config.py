@@ -1,14 +1,7 @@
 
-nodes = [
-         'Shaolin'
-         , 'Five Eldars'
-         , 'Five Eldar Families'
-         , 'Southern Shaolin'
-         ]
-
-
-edges = [
-         ('Shaolin', 'Southern Shaolin')
-         , ('Shaolin', 'Five Eldars')
-         , ('Five Eldars', 'Five Eldar Families')
-         ]
+node_dict = [
+    {'Node': 'Shaolin', 'linked_nodes': ['Southern Shaolin', 'Five Eldars']},
+    {'Node': 'Five Eldars', 'linked_nodes': ['Five Eldar Families']},
+    {'Node': 'Southern Shaolin', 'linked_nodes': []},
+    {'Node': 'Five Eldar Families', 'linked_nodes': []}
+]
