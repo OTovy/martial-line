@@ -11,14 +11,18 @@ node_dict = [
 
     , {'Node': 'Hakka', 'linked_nodes': ['Bak Mei Pai', 'Southern Praying Mantis', 'Southern Dragon', 'Phoenix Eye Fist (Chuka Shaolin)']}
 
+    , {'Node': 'Five Elder Families', 'linked_nodes': ['Lau Saam Ngan', 'Mok Ching Giu', 'Hung Hei-gun', 'Choy Gau Yi', 'Lei Yau Saan']}
+
     , {'Node': 'Lau Saam Ngan', 'linked_nodes': ['Lau Ga']}
     , {'Node': 'Mok Ching Giu', 'linked_nodes': ['Mok Ga']}
-    , {'Node': 'Hung Hei-gun', 'linked_nodes': ['Hung Ga', 'Fut Ga Buddha Family']}
-    , {'Node': 'Choy Gau Yi', 'linked_nodes': ['Choy Ga', 'Fut Ga Buddha Family']}
-    , {'Node': 'Lei Yau Saan', 'linked_nodes': ['Lei Ga', 'Fut Ga Buddha Family']}
+    , {'Node': 'Hung Hei-gun', 'linked_nodes': ['Hung Ga']}
+    , {'Node': 'Choy Gau Yi', 'linked_nodes': ['Choy Ga']}
+    , {'Node': 'Lei Yau Saan', 'linked_nodes': ['Lei Ga']}
+    
     , {'Node': 'Hung Ga', 'linked_nodes': ['Fut Ga Buddha Family']}
-    , {'Node': 'Choy Ga', 'linked_nodes': ['Fut Ga Buddha Family']}
-    , {'Node': 'Lei Ga', 'linked_nodes': ['Fut Ga Buddha Family']}
-    , {'Node': 'Fut Ga Buddha Family', 'linked_nodes': ['Hung Ga', 'Choy Ga', 'Lei Ga', 'Chan Heung']}
+    , {'Node': 'Choy Ga', 'linked_nodes': ['Fut Ga Buddha Family', 'Chan Heung']}
+    , {'Node': 'Lei Ga', 'linked_nodes': ['Chan Heung']}
+    , {'Node': 'Fut Ga Buddha Family', 'linked_nodes': ['Chan Heung']}
+    , {'Node': 'Chan Heung', 'linked_nodes': ['Choy Lei Fut']}
         
 ]
