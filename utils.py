@@ -1,4 +1,6 @@
 
+import graphviz
+
 def create_graphviz_chart(nodes, edges):
   """
   Creates a Graphviz chart with nodes and edges.
