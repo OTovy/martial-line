@@ -1,12 +1,12 @@
 import streamlit as st
 
 from utils import create_graphviz_chart
-from graph_config import nodes, edges
+from graph_config import node_dict
 
 
 def main():
     st.title("Martial Line")
-    flowchart = create_graphviz_chart(nodes, edges)
+    flowchart = create_graphviz_chart(node_dict)
     st.graphviz_chart(flowchart)
 
 
