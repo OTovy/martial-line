@@ -32,4 +32,4 @@ def create_graphviz_chart(nodes_dict, graph_engine):
       graph.edge(node_name, linked_node)
 
   
-  return graph.pipe(format='html')
+  return graph
