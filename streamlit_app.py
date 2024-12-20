@@ -8,10 +8,10 @@ from graph_config import node_dict
 def main():
     st.title("Martial Line")
     
-    engines = graphviz.get_engine_list()
-    st.selectbox(label='Layout Engine', options=engines)
+    engines = ['dot', 'neato', 'fdp', 'sfdp', 'twopi', 'circo', 'osage', 'patchwork', 'dot', 'neato', 'fdp', 'sfdp', 'twopi', 'circo', 'osage', 'patchwork']
+    engine = st.selectbox(label='Layout Engine', options=engines)
     
-    flowchart = create_graphviz_chart(node_dict)
+    flowchart = create_graphviz_chart(node_dict, engine)
     st.graphviz_chart(flowchart)
 
 
