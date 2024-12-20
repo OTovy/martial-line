@@ -21,10 +21,11 @@ def create_graphviz_chart(nodes_dict):
   """
 
   graph = graphviz.Digraph()
-
+  graph.engine = 'neato'
+  
   for node_data in nodes_dict:
     node_name = node_data['Node']
-    graph.node(node_name)
+    graph.node(node_name, shape='circle')
 
     for linked_node in node_data['linked_nodes']:
       graph.edge(node_name, linked_node)
