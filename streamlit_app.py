@@ -12,7 +12,7 @@ def main():
     engine = st.selectbox(label='Layout Engine', options=engines)
     
     flowchart = create_graphviz_chart(node_dict, engine)
-    st.markdown(flowchart)
+    st.markdown(flowchart, unsafe_allow_html=True)
     # st.graphviz_chart(flowchart)
 
 
