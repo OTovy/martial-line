@@ -20,7 +20,7 @@ def create_graphviz_chart(nodes_dict, graph_engine):
     A Graphviz graph object.
   """
 
-  graph = graphviz.Digraph(node_attr={'shape': 'circle'})
+  graph = graphviz.Digraph(node_attr={'shape': 'circle'}, rankdir='TB')
   if graph_engine:
     graph.engine = graph_engine
   
