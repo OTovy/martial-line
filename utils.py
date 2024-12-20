@@ -20,13 +20,13 @@ def create_graphviz_chart(nodes_dict, graph_engine):
     A Graphviz graph object.
   """
 
-  graph = graphviz.Digraph()
+  graph = graphviz.Digraph(node_attr={'shape': 'circle')
   if graph_engine:
     graph.engine = graph_engine
   
   for node_data in nodes_dict:
     node_name = node_data['Node']
-    graph.node(node_name, shape='circle')
+    graph.node(node_name)
 
     for linked_node in node_data['linked_nodes']:
       graph.edge(node_name, linked_node)
