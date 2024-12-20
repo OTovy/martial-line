@@ -13,7 +13,7 @@ def main():
     
     flowchart = create_graphviz_chart(node_dict, engine)
     
-    st.graphviz_chart(flowchart)
+    st.graphviz_chart(flowchart, use_container_width=True)
 
 
 if __name__=='__main__':
