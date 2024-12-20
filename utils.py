@@ -1,7 +1,7 @@
 
 import graphviz
 
-def create_graphviz_chart(nodes_dict):
+def create_graphviz_chart(nodes_dict, graph_engine):
   """
   Creates a Graphviz chart from a dictionary of nodes and their linked nodes.
 
@@ -21,7 +21,8 @@ def create_graphviz_chart(nodes_dict):
   """
 
   graph = graphviz.Digraph()
-  graph.engine = 'neato'
+  if graph_engine:
+    graph.engine = graph_engine
   
   for node_data in nodes_dict:
     node_name = node_data['Node']
