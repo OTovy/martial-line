@@ -19,6 +19,12 @@ function addEdges(edgesList) {
   });
 }
 
+function draw(formData) {
+        if (network !== null) {
+          network.destroy();
+          network = null;
+        }
+  
 // Add edges to the dataset
 addEdges(edges_list);
 
@@ -28,6 +34,8 @@ var data = {
   nodes: nodes,
   edges: edges
 };
+
+
 var options = {
     width: '100%', // Set width to 100% of the container
     height: '100%', // Set height to 100% of the container
