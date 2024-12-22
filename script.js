@@ -143,7 +143,14 @@ var options = {
     },
     physics: {
       enabled: false // Disable physics for static layout
+    },
+  
+  layout: {
+    hierarchical: {
+      direction: 'UD', // 'LR' for left-to-right, 'UD' for up-to-down
+      sortMethod: 'directed' // Sort nodes based on edge direction
     }
+  }
   
 };
 var network = new vis.Network(container, data, options);
