@@ -113,5 +113,31 @@ var data = {
 var options = {
     width: '100%', // Set width to 100% of the container
     height: '100%', // Set height to 100% of the container
+
+    nodes: {
+      shape: 'circle',
+      color: {
+        border: '#000',
+        background: '#fff', 
+        highlight: {
+          border: '#000',
+          background: '#ccc' 
+        },
+        hover: {
+          border: '#000',
+          background: '#ddd' 
+        }
+      },
+      font: {
+        color: '#000'
+      }
+    },
+    edges: {
+      color: '#000'
+    },
+    physics: {
+      enabled: false // Disable physics for static layout
+    }
+  
 };
 var network = new vis.Network(container, data, options);
