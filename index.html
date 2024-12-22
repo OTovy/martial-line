@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martial Line</title>
     <script src="https://unpkg.com/vis-network@latest/standalone/umd/vis-network.min.js"></script>
-      <style>
-            #mynetwork {
-                width: 100%; 
-                height: 100%; 
-            }
-        </style>
+ <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Viewport height */
+            margin: 0; 
+        }
+
+        header {
+            background-color: #f0f0f0; /* Example background color */
+            padding: 1rem;
+            flex-shrink: 0; /* Prevent header from shrinking */
+        }
+
+        #mynetwork {
+            flex: 1; /* Allow the graph to grow to fill the remaining space */
+        }
+    </style>
 </head>
 <body>
 
