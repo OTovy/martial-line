@@ -49,34 +49,15 @@ var edges = new vis.DataSet([]);
 
 // Function to add edges to the dataset
 function addEdges(nodeDict) {
-  nodeDict.forEach(node => {
-    if (node.linked_nodes) {
-      node.linked_nodes.forEach(linkedNode => {
-        // Add first edge with slight offset
-        edges.add({
-          from: node.Node,
-          to: linkedNode,
-          color: { color: '#000' }, // Set edge color (optional)
-          width: 2, // Set edge width
-          arrows: 'to', // Add arrowhead (optional)
-          dashes: false, // Remove dashed line (optional)
-          length: -2, // Offset slightly inwards
-        });
-
-        // Add second edge with slight offset
-        edges.add({
-          from: node.Node,
-          to: linkedNode,
-          color: { color: '#000' }, // Set edge color (optional)
-          width: 2, // Set edge width
-          arrows: 'to', // Add arrowhead (optional)
-          dashes: false, // Remove dashed line (optional)
-          length: 2, // Offset slightly outwards
-        });
-      });
-    }
-  });
+  nodeDict.forEach(node => {
+    if (node.linked_nodes) { 
+      node.linked_nodes.forEach(linkedNode => {
+        edges.add({ from: node.Node, to: linkedNode });
+      });
+    }
+  });
 }
+
 // Define the node data 
 var node_dict = [
   {'Node': 'Shaolin', 'linked_nodes': ['Southern Shaolin', 'Five Elders']},
