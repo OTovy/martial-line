@@ -134,6 +134,12 @@ var options = {
     },
     edges: {
       color: '#000'
+      arrows: {
+           to: {
+             enabled: true, // Enable arrows
+             scaleFactor: 1 // Adjust arrow size
+           }
+         }
     },
     physics: {
       enabled: false // Disable physics for static layout
