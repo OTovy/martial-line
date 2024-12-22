@@ -133,7 +133,7 @@ var options = {
       }
     },
     edges: {
-      color: '#000'
+      color: '#000',
       arrows: {
            to: {
              enabled: true, // Enable arrows
