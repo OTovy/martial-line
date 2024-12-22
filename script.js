@@ -66,7 +66,9 @@ var options = {
   layout: {
     hierarchical: {
       direction: 'UD', // 'LR' for left-to-right, 'UD' for up-to-down
-      sortMethod: 'directed' // Sort nodes based on edge direction
+      sortMethod: formData.get("layout-method"),
+      shakeTowards: formData.get("shake-towards")
+      
     },
     improvedLayout: true, // Use Kamada-Kawai for initial layout
     randomSeed: 123 // For consistent results
