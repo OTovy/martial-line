@@ -110,5 +110,8 @@ var data = {
   nodes: nodes,
   edges: edges
 };
-var options = {};
+var options = {
+    width: '100%', // Set width to 100% of the container
+    height: '100%', // Set height to 100% of the container
+};
 var network = new vis.Network(container, data, options);
