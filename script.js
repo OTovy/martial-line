@@ -100,9 +100,6 @@ var node_dict = [
   {'Node': 'Uechi Kanbun', 'linked_nodes': ['Pangal-noon (Uechi Ryu)']}
 ];
 
-// Add edges to the dataset
-addEdges(node_dict); 
-
 
 // Add edges to the dataset
 addEdges(node_dict);
