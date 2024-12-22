@@ -149,7 +149,10 @@ var options = {
     hierarchical: {
       direction: 'UD', // 'LR' for left-to-right, 'UD' for up-to-down
       sortMethod: 'directed' // Sort nodes based on edge direction
-    }
+    },
+    improvedLayout: true, // Use Kamada-Kawai for initial layout
+    randomSeed: 123 // For consistent results
+    
   }
   
 };
