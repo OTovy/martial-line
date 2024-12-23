@@ -69,16 +69,16 @@ var options = {
  physics: {
         enabled: true,
         stabilization: true,
-        solver: 'hierarchicalRepulsion',
-        minDistance: 150,
-        springLength: 100
+        solver: 'forceAtlas2Based',
+        minDistance: 1000,
+        springLength: 1000
     },  
        layout: {
         hierarchical: {
             direction: 'UD', // Upwards direction
-            levelSeparation: 150, // Adjust spacing between levels
-            nodeSpacing: 100, // Adjust spacing between nodes
-            treeSpacing: 200 // Adjust spacing between subtrees
+            levelSeparation: 1000, // Adjust spacing between levels
+            nodeSpacing: 1000, // Adjust spacing between nodes
+            treeSpacing: 500 // Adjust spacing between subtrees
         }
     }
   
