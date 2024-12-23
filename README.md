@@ -1,2 +1,2 @@
 
-# [Martial Line](https://martial-line.streamlit.app/)
+# [Martial Line](https://otovy.github.io/martial-line/)
