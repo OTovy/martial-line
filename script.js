@@ -24,6 +24,7 @@ function draw(formData) {
           network.destroy();
           network = null;
         }
+}
   
 // Add edges to the dataset
 addEdges(edges_list);
@@ -85,9 +86,4 @@ var options = {
   
 };
 var network = new vis.Network(container, data, options);
-        network.cluster({
-          joinCondition(nodeOptions) {
-            return !!formData.get(`cluster-node-${nodeOptions.id}`);
-          },
-        });
 
