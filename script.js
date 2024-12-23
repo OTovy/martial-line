@@ -70,12 +70,12 @@ var options = {
                 hierarchical: {
                         enabled: true,
                         levelSeparation: 150,
-                        nodeSpacing: 110,
+                        nodeSpacing: 500,
                         treeSpacing: 200,
                         blockShifting: false,
                         edgeMinimization: true,
                         parentCentralization: true,
-                        direction: "LR",
+                        direction: "UD",
                         sortMethod: "directed",
                         shakeTowards: "roots"
                 }
