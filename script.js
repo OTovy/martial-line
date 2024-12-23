@@ -70,7 +70,8 @@ var options = {
         enabled: true,
         stabilization: true,
         solver: 'hierarchicalRepulsion',
-        minDistance: 100
+        minDistance: 150,
+        springLength: 100
     },  
        layout: {
         hierarchical: {
