@@ -18,13 +18,6 @@ function addEdges(edgesList) {
     }
   });
 }
-
-function draw(formData) {
-        if (network !== null) {
-          network.destroy();
-          network = null;
-        }
-}
   
 // Add edges to the dataset
 addEdges(edges_list);
@@ -72,17 +65,20 @@ var options = {
       enabled: false // Disable physics for static layout
     },
   
-  layout: {
-    hierarchical: {
-      direction: 'UD', // 'LR' for left-to-right, 'UD' for up-to-down
-      sortMethod: formData.get("layout-method"),
-      shakeTowards: formData.get("shake-towards")
-      
-    },
-    improvedLayout: true, // Use Kamada-Kawai for initial layout
-    randomSeed: 123 // For consistent results
-    
-  }
+        layout: {
+                improvedLayout: false,
+                hierarchical: {
+                        enabled: true,
+                        levelSeparation: 150,
+                        nodeSpacing: 110,
+                        treeSpacing: 200,
+                        blockShifting: false,
+                        edgeMinimization: true,
+                        parentCentralization: true,
+                        direction: "LR",
+                        sortMethod: "directed",
+                        shakeTowards: "roots"
+                }  
   
 };
 var network = new vis.Network(container, data, options);
