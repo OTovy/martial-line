@@ -76,9 +76,9 @@ var options = {
        layout: {
         hierarchical: {
             direction: 'UD', // Upwards direction
-            levelSeparation: 1000, // Adjust spacing between levels
+            levelSeparation: 300, // Adjust spacing between levels
             nodeSpacing: 1000, // Adjust spacing between nodes
-            treeSpacing: 500 // Adjust spacing between subtrees
+            treeSpacing: 300 // Adjust spacing between subtrees
         }
     }
   
