@@ -78,7 +78,8 @@ var options = {
                         direction: "LR",
                         sortMethod: "directed",
                         shakeTowards: "roots"
-                }  
+                }
+        }
   
 };
 var network = new vis.Network(container, data, options);
