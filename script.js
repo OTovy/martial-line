@@ -36,6 +36,7 @@ var options = {
 
     nodes: {
       shape: 'circle',
+      size: 50,
       color: {
         border: '#000',
         background: '#fff', 
@@ -49,7 +50,10 @@ var options = {
         }
       },
       font: {
-        color: '#000'
+        color: '#000',
+        size: 12,
+        align: 'center',
+        multi: true    
       }
     },
     edges: {
@@ -61,10 +65,12 @@ var options = {
            }
          }
     },
-    physics: {
-      enabled: false // Disable physics for static layout
-    },
-  
+ physics: {
+        enabled: true,
+        stabilization: true,
+        solver: 'repulsion',
+        minDistance: 100
+    },  
        layout: {
         hierarchical: {
             direction: 'UD', // Upwards direction
