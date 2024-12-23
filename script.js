@@ -68,7 +68,7 @@ var options = {
  physics: {
         enabled: true,
         stabilization: true,
-        solver: 'repulsion',
+        solver: 'hierarchicalRepulsion',
         minDistance: 100
     },  
        layout: {
