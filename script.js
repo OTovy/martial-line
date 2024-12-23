@@ -58,6 +58,7 @@ var options = {
     },
     edges: {
       color: '#000',
+      smooth: 'continuous',
       arrows: {
            to: {
              enabled: true, // Enable arrows
