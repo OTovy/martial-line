@@ -65,21 +65,14 @@ var options = {
       enabled: false // Disable physics for static layout
     },
   
-        layout: {
-                improvedLayout: false,
-                hierarchical: {
-                        enabled: true,
-                        levelSeparation: 150,
-                        nodeSpacing: 500,
-                        treeSpacing: 200,
-                        blockShifting: false,
-                        edgeMinimization: true,
-                        parentCentralization: true,
-                        direction: "UD",
-                        sortMethod: "directed",
-                        shakeTowards: "roots"
-                }
+       layout: {
+        hierarchical: {
+            direction: 'UD', // Upwards direction
+            levelSeparation: 150, // Adjust spacing between levels
+            nodeSpacing: 100, // Adjust spacing between nodes
+            treeSpacing: 200 // Adjust spacing between subtrees
         }
+    }
   
 };
 var network = new vis.Network(container, data, options);
