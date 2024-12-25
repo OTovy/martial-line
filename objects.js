@@ -75,13 +75,13 @@ var edges_list = [
   {'Node': 'Adatuo', 'linked_nodes': ['Wong Yan-lam', 'Wong Lam-hoi']},
   {'Node': 'Wong Yan-lam', 'linked_nodes': ['Hop Ga']},
   {'Node': 'Wong Lam-hoi', 'linked_nodes': ['Pak Hok Pai (Tibetan White Crane)']},
-  {'Node': 'Ryū Ryū Ko', 'linked_nodes': ['Fujian White Crane', 'Higaonna Kanryō']},
-  {'Node': 'Higaonna Kanryō', 'linked_nodes': ['Miyagi Chōjun', 'Kyoda Jūhatsu', 'Nakaima Kenri', 'Nakaima Kenchu', 'Nakaima Keko']},
-  {'Node': 'Miyagi Chōjun', 'linked_nodes': ['Goju Ryu']},
+  {'Node': 'Ryu Ryu Ko', 'linked_nodes': ['Fujian White Crane', 'Higaonna Kanryo']},
+  {'Node': 'Higaonna Kanryo', 'linked_nodes': ['Miyagi Chojun', 'Kyoda Juhatsu', 'Nakaima Kenri', 'Nakaima Kenchu', 'Nakaima Keko']},
+  {'Node': 'Miyagi Chojun', 'linked_nodes': ['Goju Ryu']},
   {'Node': 'Goju Ryu', 'linked_nodes': ['Gogen Yamaguchi']},
-  {'Node': 'Kyoda Jūhatsu', 'linked_nodes': ['Toon Ryu']},
+  {'Node': 'Kyoda Juhatsu', 'linked_nodes': ['Toon Ryu']},
   {'Node': 'Nakaima Keko', 'linked_nodes': ['Ryuei Ryu']},
-  {'Node': 'Wāi Xinxian', 'linked_nodes': ['Uechi Kanbun']},
+  {'Node': 'Wai Xinxian', 'linked_nodes': ['Uechi Kanbun']},
   {'Node': 'Uechi Kanbun', 'linked_nodes': ['Pangal-noon (Uechi Ryu)']}
 ];
 
