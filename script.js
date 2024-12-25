@@ -23,12 +23,13 @@ function populateNodeLists(nodeList) {
       });
     }
   });
-  var nodes = new vis.DataSet( Array.from(new Set(nodes_array)) ); 
-  var edges = new vis.DataSet( Array.from(new Set(edges_array)) ); 
 }
   
 // Add edges to the dataset
 populateNodeLists(nodes_list);
+
+var nodes = new vis.DataSet( Array.from(new Set(nodes_array)) ); 
+var edges = new vis.DataSet( Array.from(new Set(edges_array)) ); 
 
 
 // Create the network
