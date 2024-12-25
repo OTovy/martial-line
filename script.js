@@ -22,7 +22,7 @@ function populateNodeLists(nodeList) {
 }
   
 // Add edges to the dataset
-populateNodeLists(nodes_array);
+populateNodeLists(nodes_list);
 
 console.log("nodes_array")
 console.log(nodes_array)
