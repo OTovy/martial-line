@@ -2,8 +2,8 @@
 import { nodes_list } from './objects.js';
 
 
-var nodes_array = new [];
-var edges_array = new [];
+var nodes_array = [];
+var edges_array = [];
 
 // Function to add edges to the dataset
 function populateNodeLists(nodeList) {
@@ -23,8 +23,8 @@ function populateNodeLists(nodeList) {
       });
     }
   });
-  var nodes = vis.DataSet( Array.from(new Set(nodes_array)) ); 
-  var edges = vis.DataSet( Array.from(new Set(edges_array)) ); 
+  var nodes = new vis.DataSet( Array.from(new Set(nodes_array)) ); 
+  var edges = new vis.DataSet( Array.from(new Set(edges_array)) ); 
 }
   
 // Add edges to the dataset
