@@ -8,18 +8,14 @@ var edges_array = [];
 // Function to add edges to the dataset
 function populateNodeLists(nodeList) {
   nodeList.forEach(node => {
-    var nodeObject = new { id: node.id, label: node.label };
-    if (!nodes_array.includes(nodeObject)) {
-      nodes_array.push(nodeObject);
-    }
+    var nodeObject = { id: node.id, label: node.label };
+    nodes_array.push(nodeObject);
       
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
-        var lNodeObject = new { id: linkedNode.id, label: linkedNode};
-        if (!nodes_array.includes(lNodeObject)) {
-            nodes_array.push(lNodeObject)
-        }
-        edges_array.push({ from: node.id, to: linkedNode });
+        var lNodeObject = { id: linkedNode.id, label: linkedNode};
+        nodes_array.push(lNodeObject);
+        edges_array.push({ from: node.id, to: linkedNode });
       });
     }
   });
