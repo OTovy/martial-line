@@ -128,7 +128,7 @@ var nodes_list = [
   {"id": "Chen Tuan", "label": "Chen Tuan", "linked_nodes": ["Liuhebafa Quan"]},
   {"id": "Zhang Sanfeng", "label": "Zhang Sanfeng", "linked_nodes": ["Wang Zongyue", "Neijia"]},
   {"id": "Wang Zongyue", "label": "Wang Zongyue", "linked_nodes": ["Chen Wangting", "Jiang Fa"]},
-  {"id": "Jiang Fa", "label": "Wang Zongyue", "linked_nodes": ["Xing Xihuai"]},
+  {"id": "Jiang Fa", "label": "Jiang Fa", "linked_nodes": ["Xing Xihuai"]},
 
     {"id": "Xing Xihuai", "label": "Xing Xihuai", "linked_nodes": ["Zhang Chucheni"]},
     {"id": "Zhang Chucheni", "label": "Zhang Chucheni", "linked_nodes": ["Chen Jingbo"]},
@@ -171,9 +171,11 @@ var nodes_list = [
   {"id": "Chen Jie", "label": "Chen Jie", "linked_nodes": ["Chen Gongzhao"]},
   {"id": "Chen Bingwang", "label": "Chen Bingwang", "linked_nodes": ["Chen Changxing"]},
   {"id": "Chen Gongzhao", "label": "Chen Gongzhao", "linked_nodes": ["Chen Youben"]},
-  {"id": "Chen Changxing", "label": "Chen Bingwang", "linked_nodes": ["Yang Luchan"]},
-    {"id": "Chen Gengxun", "label": "Chen Gengxun", "linked_nodes": ["Chen Zhaopi", "Chen Zhaokui"]},
-    {"id": "Chen Youben", "label": "Chen Yuben", "linked_nodes": ["Yang Luchan", "Chen Zhongshen", "Chen Qingping"]},
+  {"id": "Chen Changxing", "label": "Chen Changxing", "linked_nodes": ["Yang Luchan", "Chen Gengyun"]},
+    {"id": "Chen Gengyun", "label": "Chen Gengyun", "linked_nodes": ["Chen Yanxi"]},
+    {"id": "Chen Fake", "label": "Chen Fake", "linked_nodes": ["Chen Zhaopi", "Chen Zhaokui"]},
+    {"id": "Chen Yanxi", "label": "Chen Yanxi", "linked_nodes": ["Chen Fake"]},
+  {"id": "Chen Youben", "label": "Chen Youben", "linked_nodes": ["Yang Luchan", "Chen Zhongshen", "Chen Qingping"]},
 
     {"id": "Yang Luchan", "label": "Yang Luchan", "linked_nodes": ["Yang Banhou", "Yang Jianhou", "Yang Jinyuan"]},
     {"id": "Yang Banhou", "label": "Yang Banhou", "linked_nodes": ["Yang Chengfu"]},
