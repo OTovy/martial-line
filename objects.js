@@ -38,7 +38,7 @@ var nodes_list = [
   {"id": "Wu Wei", "label": "Wu Wei", "linked_nodes": []},
   {"id": "Jeet Kune Do", "label": "Jeet Kune Do", "linked_nodes": []},
   {"id": "Joseph Cowles", "label": "Joseph Cowles", "linked_nodes": []},
-  {"id": "Luo Han Quan (Monk Fist)", "label": "Luo Han Quan (Monk Fist)", "linked_nodes": ["Incense Shop Boxing", "Fang Zhengdong"]},
+  {"id": "Luo Han Quan (Monk Fist)", "label": "Luo Han Quan (Monk Fist)", "linked_nodes": ["Incense Shop Boxing", "Fang Zhengdong", "Arakaki Seisho"]},
   {"id": "Incense Shop Boxing", "label": "Incense Shop Boxing", "linked_nodes": []},
   {"id": "Fang Zhengdong", "label": "Fang Zhengdong", "linked_nodes": ["Fang Qiniang"]},
   {"id": "Choy Lei Fut", "label": "Choy Lei Fut", "linked_nodes": []},
@@ -55,8 +55,9 @@ var nodes_list = [
   {"id": "Kyoda Juhatsu", "label": "Kyoda Juhatsu", "linked_nodes": ["Toon Ryu"]},
   {"id": "Nakaima Keko", "label": "Nakaima Keko", "linked_nodes": ["Ryuei Ryu"]},
   {"id": "Wai Xinxian", "label": "Wai Xinxian", "linked_nodes": ["Arakaki Seisho"]},
-  {"id": "Arakaki Seisho", "label": "Uechi Kanbun", "linked_nodes": ["Pangal-noon (Uechi Ryu)"]},
-  {"id": "Pangal-noon (Uechi Ryu)", "label": "Uechi Kanbun", "linked_nodes": []}
+  {"id": "Arakaki Seisho", "label": "Arakaki Seisho", "linked_nodes": ["Uechi Kanbun", "Higaonna Kanryo"]},
+  {"id": "Uechi Kanbun", "label": "Uechi Kanbun", "linked_nodes": ["Pangal-noon (Uechi Ryu)"]},
+  {"id": "Pangal-noon (Uechi Ryu)", "label": "Pangal-noon (Uechi Ryu)", "linked_nodes": []}
   
 ];
 
