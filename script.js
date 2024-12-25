@@ -1,5 +1,5 @@
 
-import nodes_list from './objects.js';
+import { nodes_list } from './objects.js';
 
 
 var nodes = new vis.DataSet([]);
