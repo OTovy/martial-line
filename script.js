@@ -55,9 +55,12 @@ var options = {
         multi: true    
       }
     },
-    edges: {
-      color: '#000',
-      smooth: 'continuous',
+     edges: {
+       color: '#000',
+     smooth: {
+         type: 'continuous',
+         roundness: 0.5 
+     },
       arrows: {
            to: {
              enabled: true, // Enable arrows
@@ -69,8 +72,9 @@ var options = {
         enabled: true,
         stabilization: true,
         solver: 'forceAtlas2Based',
-        minDistance: 1000,
-        springLength: 1000
+        forceAtlas2Based: {
+            springLength: 1000
+        }
     },  
        layout: {
         hierarchical: {
