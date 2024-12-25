@@ -144,8 +144,39 @@ var nodes_list = [
   {"id": "Chen Bingqi", "label": "Chen Bingqi", "linked_nodes": []},
   {"id": "Chen Bingren", "label": "Chen Bingren", "linked_nodes": []},
   {"id": "Chen Bingwang", "label": "Chen Bingwang", "linked_nodes": []},
-  {"id": "Chen Gongzhao", "label": "Chen Gongzhao", "linked_nodes": []}
-  
+  {"id": "Chen Gongzhao", "label": "Chen Gongzhao", "linked_nodes": []},
+
+    {"id": "Chen Bangwan", "label": "Chen Bangwan", "linked_nodes": ["Chen Gengxun", "Chen Yuben", "Chen Zhaokui"]},
+    {"id": "Chen Gengxun", "label": "Chen Gengxun", "linked_nodes": ["Chen Zhaopi", "Chen Zhaokui"]},
+    {"id": "Chen Yuben", "label": "Chen Yuben", "linked_nodes": ["Chen Zhaokui"]},
+    {"id": "Chen Zhaokui", "label": "Chen Zhaokui"},
+    {"id": "Chen Zhaopi", "label": "Chen Zhaopi"},
+    {"id": "Yang Luchan", "label": "Yang Luchan", "linked_nodes": ["Yang Banhou", "Yang Jianhou", "Yang Jinyuan"]},
+    {"id": "Yang Banhou", "label": "Yang Banhou", "linked_nodes": ["Yang Chengfu"]},
+    {"id": "Yang Jianhou", "label": "Yang Jianhou", "linked_nodes": ["Yang Chengfu"]},
+    {"id": "Yang Jinyuan", "label": "Yang Jinyuan"},
+    {"id": "Yang Chengfu", "label": "Yang Chengfu", "linked_nodes": ["Cheng Man-ching", "Fu Zhensong", "Wang Lianquan", "Xiao 'Laojia' Yuliang", "Wu Jianquan"]},
+    {"id": "Cheng Man-ching", "label": "Cheng Man-ching"},
+    {"id": "Fu Zhensong", "label": "Fu Zhensong"},
+    {"id": "Wang Lianquan", "label": "Wang Lianquan"},
+    {"id": "Xiao 'Laojia' Yuliang", "label": "Xiao 'Laojia' Yuliang"},
+    {"id": "Wu Jianquan", "label": "Wu Jianquan", "linked_nodes": ["Wu Kongyu", "Wu Wenchao"]},
+    {"id": "Wu Kongyu", "label": "Wu Kongyu"},
+    {"id": "Wu Wenchao", "label": "Wu Wenchao"},
+    {"id": "Chen Pi", "label": "Chen Pi", "linked_nodes": ["Chen Baozhen", "Chen Xiaowang"]},
+    {"id": "Chen Baozhen", "label": "Chen Baozhen", "linked_nodes": ["Li Ruolin"]},
+    {"id": "Chen Xiaowang", "label": "Chen Xiaowang", "linked_nodes": ["Chen Style"]},
+    {"id": "Chen Style", "label": "Chen Style"},
+    {"id": "Li Ruolin", "label": "Li Ruolin"},
+    {"id": "Chen FaKe", "label": "Chen FaKe"},
+    {"id": "Chen Yiming", "label": "Chen Yiming", "linked_nodes": ["Chen Qingshan"]}, 
+    {"id": "Chen Qingshan", "label": "Chen Qingshan"},
+    {"id": "Wang Lang", "label": "Wang Lang"},
+    {"id": "Wang Yan", "label": "Wang Yan", "linked_nodes": ["Wang Zhichang"]},
+    {"id": "Wang Zhichang", "label": "Wang Zhichang"},
+    {"id": "Wu Yuxi", "label": "Wu Yuxi", "linked_nodes": ["Wu Style"]},
+    {"id": "Wu Style", "label": "Wu Style"}
+
 ];
 
 
