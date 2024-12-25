@@ -22,12 +22,13 @@ function populateNodeLists(nodeList) {
 }
   
 // Add edges to the dataset
-populateNodeLists(nodes_list);
+populateNodeLists(nodes_array);
+
+console.log(nodes)
 
 var nodes = new vis.DataSet( Array.from(nodes_array) ); 
 var edges = new vis.DataSet( Array.from(edges_array) ); 
 
-console.log(nodes)
 
 // Create the network
 var container = document.getElementById('mynetwork');
