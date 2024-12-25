@@ -24,7 +24,6 @@ function populateNodeLists(nodeList) {
 // Add edges to the dataset
 populateNodeLists(nodes_list);
 
-console.log("nodes_array")
 console.log(nodes_array)
 
 var nodes = new vis.DataSet( Array.from(nodes_array) ); 
