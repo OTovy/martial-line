@@ -64,7 +64,18 @@ var nodes_list = [
   {"id": "Kogusuku Shuren", "label": "Kogusuku Shuren", "linked_nodes": ["Kogusuku Kafu"]},
   {"id": "Kogusuku Kafu", "label": "Kogusuku Kafu", "linked_nodes": ["Kojo Kafu"]},
 
-
+  {"id": "Tomari Te", "label": "Tomari Te", "linked_nodes": ["Kishin Teruya", "Karyu Sojin"]},
+  {"id": "Kishin Teruya", "label": "Kishin Teruya", "linked_nodes": ["Giel Yamada", "Kousaku Matsumora"]},
+  {"id": "Karyu Sojin", "label": "Karyu Sojin", "linked_nodes": ["Kokan Oyadomari"]},
+  {"id": "Giel Yamada", "label": "Giel Yamada", "linked_nodes": ["Koho Kuba", "Kotasu Iha"]},
+  {"id": "Kousaku Matsumora", "label": "Kousaku Matsumora", "linked_nodes": ["Kokan Oyadomari"]},
+  {"id": "Kokan Oyadomari", "label": "Kokan Oyadomari", "linked_nodes": ["Chotoku Kyan", "Choki Motobu"]},
+  {"id": "Koho Kuba", "label": "Koho Kuba", "linked_nodes": ["Kosei Nakamoto"]},
+  {"id": "Kotasu Iha", "label": "Kotasu Iha", "linked_nodes": ["Chojin Kuba", "Seiyu Nakasone"]},
+  {"id": "Chotoku Kyan", "label": "Chotoku Kyan", "linked_nodes": ["Joen Nakazato", "Kenwa Mabuni"]},
+  {"id": "Choki Motobu", "label": "Choki Motobu", "linked_nodes": ["Yasuhiro Konishi", "Tatsuo Yamada", "Hironori Otsuka"]},
+  {"id": "Seiyu Nakasone", "label": "Seiyu Nakasone", "linked_nodes": ["Shoshin Nagamine"]},
+  {"id": "Shoshin Nagamine", "label": "Shoshin Nagamine", "linked_nodes": ["Matsubayashi Ryu (Shorin)", "Shorinji Ryu"]}
 
 ];
 
