@@ -8,29 +8,33 @@ var edges_array = new Array();
 // Function to add edges to the dataset
 function populateNodeLists(nodeList) {
   nodeList.forEach(node => {
-    var nodeObject = { id: node.id, label: node.label };
-    if (!nodes_array.includes(nodeObject)) {        
-        nodes_array.push(nodeObject);
-    };      
+    nodes_array.push({ id: node.id, label: node.label });
+
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
-        var lNodeObject = { id: linkedNode, label: linkedNode };
-        if (!nodes_array.includes(lNodeObject)) {
-            nodes_array.push(lNodeObject);
-        };
+        nodes_array.push({ id: linkedNode, label: linkedNode });
         edges_array.push({ from: node.id, to: linkedNode });
       });
     };
   });
 }
-  
-// Add edges to the dataset
+
+function removeDuplicates(arr, key) {
+  return arr.reduce((unique, obj) => {
+    if (!unique.some(item => item[key] === obj[key])) {
+      unique.push(obj);
+    }
+    return unique;
+  }, []);
+}
+
 populateNodeLists(nodes_list);
 
+var nodes_array = removeDuplicates(nodes_array, "id")
 console.log(nodes_array)
 
-var nodes = new vis.DataSet( Array.from(new Set(nodes_array)) ); 
-var edges = new vis.DataSet( Array.from(new Set(edges_array)) ); 
+var nodes = new vis.DataSet( nodes_array ); 
+var edges = new vis.DataSet( edges_array ); 
 
 
 // Create the network
