@@ -14,7 +14,7 @@ function populateNodeLists(nodeList) {
     }      
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
-        var lNodeObject = { id: linkedNode, label: linkedNode};
+        var lNodeObject = { id: linkedNode, label: linkedNode };
         if (!nodes_array.has(lNodeObject)) {
             nodes_array.add(lNodeObject);
         }
