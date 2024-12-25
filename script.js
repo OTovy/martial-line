@@ -9,14 +9,14 @@ var edges_array = [];
 function populateNodeLists(nodeList) {
   nodeList.forEach(node => {
     var nodeObject = { id: node.id, label: node.label };
-    if (nodes_array.includes(nodeObject)) {
+    if (!nodes_array.includes(nodeObject)) {
       nodes_array.push(nodeObject);
     }
       
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
         var lNodeObject = { id: linkedNode.id, label: linkedNode};
-        if (nodes_array.includes(lNodeObject)) {
+        if (!nodes_array.includes(lNodeObject)) {
             nodes_array.push(lNodeObject)
         }
         edges_array.push({ from: node.id, to: linkedNode });
