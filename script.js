@@ -9,14 +9,14 @@ var edges = new vis.DataSet([]);
 function populateNodeLists(nodeList) {
   nodeList.forEach(node => {
     var nodeObject = { id: node.id, label: node.label };
-    if (nodeObject not in nodes) {
+    if (nodes.includes(nodeObject)) {
       nodes.add(nodeObject);
     }
       
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
         var lNodeObject = { id: linkedNode.id, label: linkedNode};
-        if (lNodeObject not in nodes) {
+        if (nodes.includes(lNodeObject)) {
             nodes.add(lNodeObject)
         }
         edges.add({ from: node.id, to: linkedNode });
