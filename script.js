@@ -31,7 +31,6 @@ function removeDuplicates(arr, key) {
 populateNodeLists(nodes_list);
 
 var nodes_array = removeDuplicates(nodes_array, "id")
-console.log(nodes_array)
 
 var nodes = new vis.DataSet( nodes_array ); 
 var edges = new vis.DataSet( edges_array ); 
@@ -84,20 +83,17 @@ var options = {
            }
          }
     },
- physics: {
-        enabled: true,
-        stabilization: true,
-        solver: 'forceAtlas2Based',
-        forceAtlas2Based: {
-            springLength: 1000
-        }
-    },  
+     physics: {
+            enabled: false,
+            solver: 'forceAtlas2Based',
+        },
        layout: {
         hierarchical: {
             direction: 'UD', // Upwards direction
-            levelSeparation: 300, // Adjust spacing between levels
-            nodeSpacing: 1000, // Adjust spacing between nodes
-            treeSpacing: 300 // Adjust spacing between subtrees
+            levelSeparation: 300, // Adjust spacing between levels (Rows)
+            nodeSpacing: 300, // Adjust spacing between nodes (Columns)
+            treeSpacing: 300, // Adjust spacing between subtrees
+            edgeMinimization: true
         }
     }
   
