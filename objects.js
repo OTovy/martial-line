@@ -40,7 +40,7 @@ var nodes_list = [
   {"id": "Joseph Cowles", "label": "Joseph Cowles", "linked_nodes": []},
   {"id": "Luo Han Quan (Monk Fist)", "label": "Luo Han Quan (Monk Fist)", "linked_nodes": ["Incense Shop Boxing", "Fang Zhengdong"]},
   {"id": "Incense Shop Boxing", "label": "Incense Shop Boxing", "linked_nodes": []},
-  {"id": "Fang Zhengdong", "label": "Fang Zhengdong", "linked_nodes": []},
+  {"id": "Fang Zhengdong", "label": "Fang Zhengdong", "linked_nodes": ["Fang Qiniang"]},
   {"id": "Choy Lei Fut", "label": "Choy Lei Fut", "linked_nodes": []},
   {"id": "Fang Qiniang", "label": "Fang Qiniang", "linked_nodes": ["Fujian White Crane"]},
   {"id": "Fujian White Crane", "label": "Fujian White Crane", "linked_nodes": []},
