@@ -12,17 +12,17 @@ function populateNodeLists(nodeList) {
     if (!nodes_array.has(nodeObject)) {        
         console.log( !nodes_array.has(nodeObject) )
         nodes_array.add(nodeObject);
-    }      
+    };      
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
         var lNodeObject = { id: linkedNode, label: linkedNode };
         if (!nodes_array.has(lNodeObject)) {
             console.log( !nodes_array.has(lNodeObject) )
             nodes_array.add(lNodeObject);
-        }
+        };
         edges_array.add({ from: node.id, to: linkedNode });
       });
-    }
+    };
   });
 }
   
