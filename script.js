@@ -2,12 +2,14 @@
 import nodes_list from './objects.js';
 
 
-var nodes = new vis.DataSet(nodes_list);
+var nodes = new vis.DataSet([]);
 var edges = new vis.DataSet([]);
 
 // Function to add edges to the dataset
-function addEdges(edgesList) {
-  edgesList.forEach(node => {
+function populateNodeLists(nodeList) {
+  nodeList.forEach(node => {
+    nodes.add({ id: node.id, label: node.label});
+    
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
         edges.add({ from: node.id, to: linkedNode });
@@ -17,7 +19,7 @@ function addEdges(edgesList) {
 }
   
 // Add edges to the dataset
-addEdges(nodes_list);
+populateNodeLists(nodes_list);
 
 // Create the network
 var container = document.getElementById('mynetwork');
