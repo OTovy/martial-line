@@ -169,13 +169,11 @@ var nodes_list = [
   {"id": "Chen Jixia", "label": "Chen Jixia", "linked_nodes": ["Chen Bingqi", "Chen Bingren", "Chen Bingwang"]},
   {"id": "Chen Zhengru", "label": "Chen Zhengru", "linked_nodes": ["Chen Jie"]},
   {"id": "Chen Jie", "label": "Chen Jie", "linked_nodes": ["Chen Gongzhao"]},
-  {"id": "Chen Bingqi", "label": "Chen Bingqi", "linked_nodes": []},
-  {"id": "Chen Bingren", "label": "Chen Bingren", "linked_nodes": []},
   {"id": "Chen Bingwang", "label": "Chen Bingwang", "linked_nodes": ["Chen Changxing"]},
   {"id": "Chen Gongzhao", "label": "Chen Gongzhao", "linked_nodes": ["Chen Yuben"]},
-
+  {"id": "Chen Changxing", "label": "Chen Bingwang", "linked_nodes": ["Yang Luchan"]},
     {"id": "Chen Gengxun", "label": "Chen Gengxun", "linked_nodes": ["Chen Zhaopi", "Chen Zhaokui"]},
-    {"id": "Chen Yuben", "label": "Chen Yuben", "linked_nodes": ["Chen Zhaokui"]},
+    {"id": "Chen Yuben", "label": "Chen Yuben", "linked_nodes": ["Chen Zhaokui", "Yang Luchan"]},
 
     {"id": "Yang Luchan", "label": "Yang Luchan", "linked_nodes": ["Yang Banhou", "Yang Jianhou", "Yang Jinyuan"]},
     {"id": "Yang Banhou", "label": "Yang Banhou", "linked_nodes": ["Yang Chengfu"]},
