@@ -54,8 +54,10 @@ var nodes_list = [
   {"id": "Goju Ryu", "label": "Goju Ryu", "linked_nodes": ["Gogen Yamaguchi"]},
   {"id": "Kyoda Juhatsu", "label": "Kyoda Juhatsu", "linked_nodes": ["Toon Ryu"]},
   {"id": "Nakaima Keko", "label": "Nakaima Keko", "linked_nodes": ["Ryuei Ryu"]},
-  {"id": "Wai Xinxian", "label": "Wai Xinxian", "linked_nodes": ["Uechi Kanbun"]},
-  {"id": "Uechi Kanbun", "label": "Uechi Kanbun", "linked_nodes": ["Pangal-noon (Uechi Ryu)"]}
+  {"id": "Wai Xinxian", "label": "Wai Xinxian", "linked_nodes": ["Arakaki Seisho"]},
+  {"id": "Arakaki Seisho", "label": "Uechi Kanbun", "linked_nodes": ["Pangal-noon (Uechi Ryu)"]}
+  {"id": "Pangal-noon (Uechi Ryu)", "label": "Uechi Kanbun", "linked_nodes": []}
+  
 ];
 
 
