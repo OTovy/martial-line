@@ -173,7 +173,7 @@ var nodes_list = [
   {"id": "Chen Gongzhao", "label": "Chen Gongzhao", "linked_nodes": ["Chen Yuben"]},
   {"id": "Chen Changxing", "label": "Chen Bingwang", "linked_nodes": ["Yang Luchan"]},
     {"id": "Chen Gengxun", "label": "Chen Gengxun", "linked_nodes": ["Chen Zhaopi", "Chen Zhaokui"]},
-    {"id": "Chen Yuben", "label": "Chen Yuben", "linked_nodes": ["Chen Zhaokui", "Yang Luchan"]},
+    {"id": "Chen Yuben", "label": "Chen Yuben", "linked_nodes": ["Yang Luchan", "Chen Zhongshen", "Chen Qingping"]},
 
     {"id": "Yang Luchan", "label": "Yang Luchan", "linked_nodes": ["Yang Banhou", "Yang Jianhou", "Yang Jinyuan"]},
     {"id": "Yang Banhou", "label": "Yang Banhou", "linked_nodes": ["Yang Chengfu"]},
