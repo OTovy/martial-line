@@ -2,20 +2,20 @@
 import { nodes_list } from './objects.js';
 
 
-var nodes_array = [];
-var edges_array = [];
+var nodes_array = new Set();
+var edges_array = new Set();
 
 // Function to add edges to the dataset
 function populateNodeLists(nodeList) {
   nodeList.forEach(node => {
     var nodeObject = { id: node.id, label: node.label };
-    nodes_array.push(nodeObject);
+    nodes_array.add(nodeObject);
       
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
         var lNodeObject = { id: linkedNode.id, label: linkedNode};
-        nodes_array.push(lNodeObject);
-        edges_array.push({ from: node.id, to: linkedNode });
+        nodes_array.add(lNodeObject);
+        edges_array.add({ from: node.id, to: linkedNode });
       });
     }
   });
@@ -24,7 +24,7 @@ function populateNodeLists(nodeList) {
 // Add edges to the dataset
 populateNodeLists(nodes_list);
 
-var nodes = new vis.DataSet( Array.from(new Set(nodes_array)) ); 
+var nodes = new vis.DataSet( nodes_array ); 
 var edges = new vis.DataSet( edges_array ); 
 
 console.log(nodes)
