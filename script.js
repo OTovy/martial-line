@@ -29,8 +29,9 @@ function populateNodeLists(nodeList) {
 populateNodeLists(nodes_list);
 
 var nodes = new vis.DataSet( Array.from(new Set(nodes_array)) ); 
-var edges = new vis.DataSet( Array.from(new Set(edges_array)) ); 
+var edges = new vis.DataSet( edges_array ); 
 
+console.log(nodes)
 
 // Create the network
 var container = document.getElementById('mynetwork');
