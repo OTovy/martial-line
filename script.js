@@ -8,14 +8,23 @@ var edges = new vis.DataSet([]);
 // Function to add edges to the dataset
 function populateNodeLists(nodeList) {
   nodeList.forEach(node => {
-    nodes.add({ id: node.id, label: node.label});
-    
+    var nodeObject = { id: node.id, label: node.label };
+    if (nodeObject not in nodes) {
+      nodes.add(nodeObject);
+    }
+      
     if (node.linked_nodes) { 
       node.linked_nodes.forEach(linkedNode => {
+        var lNodeObject = { id: linkedNode.id, label: linkedNode};
+        if (lNodeObject not in nodes) {
+            nodes.add(lNodeObject)
+        }
         edges.add({ from: node.id, to: linkedNode });
       });
     }
   });
+  var nodes = Array.from(new Set(nodes)) ; 
+  var edges = Array.from(new Set(edges)) ; 
 }
   
 // Add edges to the dataset
