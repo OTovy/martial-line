@@ -187,8 +187,21 @@ var nodes_list = [
     {"id": "Chen Xiaowang", "label": "Chen Xiaowang", "linked_nodes": ["Chen Style"]},
     {"id": "Chen Yiming", "label": "Chen Yiming", "linked_nodes": ["Chen Qingshan"]}, 
     {"id": "Wang Yan", "label": "Wang Yan", "linked_nodes": ["Wang Zhichang"]},
-    {"id": "Wu Yuxi", "label": "Wu Yuxi", "linked_nodes": ["Wu Style"]}
+    {"id": "Wu Yuxi", "label": "Wu Yuxi", "linked_nodes": ["Wu Style"]},
 
+  {"id": "Chun Sang Sup", "label": "Chun Sang Sup", "linked_nodes": ["Ji Do Kwan"]},
+{"id": "Ji Do Kwan", "label": "Ji Do Kwan", "linked_nodes": ["Lee Kyo Yoon"]},
+{"id": "Lee Kyo Yoon", "label": "Lee Kyo Yoon", "linked_nodes": ["Han Moo Kwan"]},
+{"id": "Yoon Byung-In", "label": "Yoon Byung-In", "linked_nodes": ["Chang Moo Kwan"]},
+{"id": "Chang Moo Kwan", "label": "Chang Moo Kwan", "linked_nodes": ["Park Chul Hee", "Hong Jong Pyo"]},
+{"id": "Park Chul Hee", "label": "Park Chul Hee", "linked_nodes": ["Kang Duk Won"]},
+{"id": "Hong Jong Pyo", "label": "Hong Jong Pyo", "linked_nodes": ["Kang Duk Won"]},
+{"id": "Ro Byung Jik", "label": "Ro Byung Jik", "linked_nodes": ["Song Moo Kwan"]},
+{"id": "Song Moo Kwan", "label": "Song Moo Kwan", "linked_nodes": ["Lee Yong Woo"]},
+{"id": "Lee Yong Woo", "label": "Lee Yong Woo", "linked_nodes": ["Jung Do Kwan"]},
+{"id": "Lee Won-kuk", "label": "Lee Won-kuk", "linked_nodes": ["Chung Do Kwan"]},
+{"id": "Chung Do Kwan", "label": "Chung Do Kwan", "linked_nodes": ["Choi Hong Hi"]},
+{"id": "Choi Hong Hi", "label": "Choi Hong Hi", "linked_nodes": ["Oh Do Kwan"]}
 ];
 
 
