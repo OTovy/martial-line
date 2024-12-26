@@ -193,6 +193,7 @@ var nodes_list = [
 
   {"id": "Gichin Funakoshi", "label": "Gichin Funakoshi", "linked_nodes": ["Chun Sang Sup", "Yoon Byung-In", "Ro Byung Jik", "Lee Won-kuk"]},
   {"id": "Kodokan Judo", "label": "Kodokan Judo", "linked_nodes": ["Yun Mu Kwan"]},
+  {"id": "Yun Mu Kwan", "label": "Yun Mu Kwan", "linked_nodes": ["Chun Sang Sup"]},
   
 
   
