@@ -189,6 +189,10 @@ var nodes_list = [
     {"id": "Wang Yan", "label": "Wang Yan", "linked_nodes": ["Wang Zhichang"]},
     {"id": "Wu Yuxi", "label": "Wu Yuxi", "linked_nodes": ["Wu Style"]},
 
+  
+
+  {"id": "Gichin Funakoshi", "label": "Gichin Funakoshi", "linked_nodes": ["Chun Sang Sup", "Yoon Byung-In", "Ro Byung Jik", "Lee Won-kuk"]},
+
   {"id": "Chun Sang Sup", "label": "Chun Sang Sup", "linked_nodes": ["Ji Do Kwan"]},
 {"id": "Ji Do Kwan", "label": "Ji Do Kwan", "linked_nodes": ["Lee Kyo Yoon"]},
 {"id": "Lee Kyo Yoon", "label": "Lee Kyo Yoon", "linked_nodes": ["Han Moo Kwan"]},
