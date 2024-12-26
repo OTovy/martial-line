@@ -102,7 +102,7 @@ var nodes_list = [
   {"id": "Homma Jouemon", "label": "Homma Jouemon", "linked_nodes": ["Tenjin Shinyo Ryu"]},
   {"id": "Terada", "label": "Terada", "linked_nodes": ["Kito Ryu"]},
   {"id": "Fukuno Shichirouemon n Masakatsu", "label": "Fukuno Shichirouemon n Masakatsu", "linked_nodes": ["Ryoi Shinto Ryu"]},
-  {"id": "Takenouchi Nakatsukasa daiyu Hisamori", "label": "Takenouchi Nakatsukasa daiyu Hisamori", "linked_nodes": ["Ryoi Shinto Ryu"]},
+  {"id": "Takenouchi Nakatsukasa daiyu Hisamori", "label": "Takenouchi Nakatsukasa daiyu Hisamori", "linked_nodes": ["Takenouchi Ryu"]},
 
   {"id": "Tenjin Shinyo Ryu", "label": "Tenjin Shinyo Ryu", "linked_nodes": ["Mataemon Masatomo", "Fukuda Hachinosuke"]},
   {"id": "Kito Ryu", "label": "Kito Ryu", "linked_nodes": ["Iikubo Tsunetoshi"]},
