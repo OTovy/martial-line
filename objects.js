@@ -161,7 +161,7 @@ var nodes_list = [
   {"id": "Masutatsu Oyama", "label": "Masutatsu Oyama", "linked_nodes": ["Kyokushin Karate"]},
   
   // Taichi
-  {"id": "Wudang", "label": "Wudang", "linked_nodes": ["Chen Tuan", "Zhang Sanfeng"]},
+  {"id": "Wudang", "label": "Wudang", "linked_nodes": ["Chen Tuan", "Zhang Sanfeng", "Lai"]},
   {"id": "Daoyin", "label": "Daoyin", "linked_nodes": ["Chen Wangting"]},
 
   {"id": "Qi Jiguang", "label": "Qi Jiguang", "linked_nodes": ["Jixiao Xinshu", "Lianbing Shiji"]},
@@ -281,8 +281,10 @@ var nodes_list = [
 {"id": "Choi Hong Hi", "label": "Choi Hong Hi", "linked_nodes": ["Oh Do Kwan"]},
 
 // Baji Quan
-{"id": "Wu Zhong", "label": "Wu Zhong", "linked_nodes": ["Baji Quan"]}
-                                                         
+{"id": "Lai", "label": "Lai", "linked_nodes": ["Pi", "Wu Zhong"]},
+{"id": "Wu Zhong", "label": "Wu Zhong", "linked_nodes": ["Baji Quan", "Wu Ying"]}
+
+                                                        
 ];
 
 
