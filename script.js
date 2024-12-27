@@ -46,6 +46,7 @@ style: [
       'border-color': '#000000',
       'label': 'data(label)',
       'color': '#000000',
+      'background-opacity': 0,
       'shape': 'ellipse', // This makes the node a circle
       'text-valign': 'center',
       'text-halign': 'center',
