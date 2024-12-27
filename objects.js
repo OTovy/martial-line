@@ -258,9 +258,7 @@ var nodes_list = [
   
 
 // Taekwondo
-  {"id": "Gichin Funakoshi", "label": "Gichin Funakoshi", "linked_nodes": ["Chun Sang Sup", "Yoon Byung-In", "Ro Byung Jik", "Lee Won-kuk"]},
-  {"id": "Kodokan Judo", "label": "Kodokan Judo", "linked_nodes": ["Yun Mu Kwan"]},
-  {"id": "Yun Mu Kwan", "label": "Yun Mu Kwan", "linked_nodes": ["Chun Sang Sup"]},
+{"id": "Yun Mu Kwan", "label": "Yun Mu Kwan", "linked_nodes": ["Chun Sang Sup"]},
   
 {"id": "Chun Sang Sup", "label": "Chun Sang Sup", "linked_nodes": ["Ji Do Kwan"]},
 {"id": "Ji Do Kwan", "label": "Ji Do Kwan", "linked_nodes": ["Lee Kyo Yoon"]},
