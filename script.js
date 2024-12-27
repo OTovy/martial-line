@@ -72,6 +72,8 @@ var options = {
     },
      edges: {
        color: '#000',
+       hoverWidth: 3,
+       selectionWidth: 3,
      smooth: {
          type: 'continuous',
          roundness: 0.5 
@@ -82,6 +84,9 @@ var options = {
              scaleFactor: 1 // Adjust arrow size
            }
          }
+    },
+    interaction: {
+        hover: true
     },
      physics: {
             enabled: false,
