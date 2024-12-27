@@ -75,8 +75,7 @@ var options = {
        hoverWidth: 3,
        selectionWidth: 3,
      smooth: {
-         type: 'continuous',
-         roundness: 0.5 
+         type: 'dynamic',
      },
       arrows: {
            to: {
@@ -90,7 +89,6 @@ var options = {
     },
      physics: {
             enabled: false,
-            solver: 'forceAtlas2Based',
         },
        layout: {
         hierarchical: {
