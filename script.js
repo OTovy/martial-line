@@ -2,104 +2,76 @@
 import { nodes_list } from './objects.js';
 
 
-var nodes_array = new Array();
-var edges_array = new Array();
+// Process nodes and edges
+var elements = [];
 
-// Function to add edges to the dataset
-function populateNodeLists(nodeList) {
-  nodeList.forEach(node => {
-    nodes_array.push({ id: node.id, label: node.label });
+// Add all nodes from nodes_list
+var nodeSet = new Set();
+nodes_list.forEach(node => {
+  nodeSet.add(node.id);
+  elements.push({
+    data: { id: node.id, label: node.label }
+  });
+});
 
-    if (node.linked_nodes) { 
-      node.linked_nodes.forEach(linkedNode => {
-        nodes_array.push({ id: linkedNode, label: linkedNode });
-        edges_array.push({ from: node.id, to: linkedNode });
-      });
-    };
-  });
-}
-
-function removeDuplicates(arr, key) {
-  return arr.reduce((unique, obj) => {
-    if (!unique.some(item => item[key] === obj[key])) {
-      unique.push(obj);
+// Add any missing nodes from linked_nodes
+nodes_list.forEach(node => {
+  node.linked_nodes.forEach(linkedNode => {
+    if (!nodeSet.has(linkedNode)) {
+      nodeSet.add(linkedNode);
+      elements.push({
+        data: { id: linkedNode, label: linkedNode }
+      });
     }
-    return unique;
-  }, []);
-}
+  });
+});
 
-populateNodeLists(nodes_list);
+// Add edges
+nodes_list.forEach(node => {
+  node.linked_nodes.forEach(linkedNode => {
+    elements.push({
+      data: { source: node.id, target: linkedNode }
+    });
+  });
+});
 
-var nodes_array = removeDuplicates(nodes_array, "id")
-
-var nodes = new vis.DataSet( nodes_array ); 
-var edges = new vis.DataSet( edges_array ); 
-
-
-// Create the network
-var container = document.getElementById('mynetwork');
-var data = {
-  nodes: nodes,
-  edges: edges
-};
-
-
-var options = {
-    width: '100%', // Set width to 100% of the container
-    height: '100%', // Set height to 100% of the container
-
-    nodes: {
-      shape: 'circle',
-      size: 50,
-      color: {
-        border: '#000',
-        background: '#fff', 
-        highlight: {
-          border: '#000',
-          background: '#ccc' 
-        },
-        hover: {
-          border: '#000',
-          background: '#ddd' 
-        }
-      },
-      font: {
-        color: '#000',
-        size: 12,
-        align: 'center',
-        multi: true    
-      }
-    },
-     edges: {
-       color: '#000',
-       hoverWidth: 3,
-       selectionWidth: 3,
-     smooth: {
-         type: 'dynamic',
-     },
-      arrows: {
-           to: {
-             enabled: true, // Enable arrows
-             scaleFactor: 1 // Adjust arrow size
-           }
-         }
-    },
-    interaction: {
-        hover: true
-    },
-     physics: {
-            enabled: false,
-        },
-       layout: {
-        hierarchical: {
-            direction: 'UD', // Upwards direction
-            levelSeparation: 300, // Adjust spacing between levels (Rows)
-            nodeSpacing: 300, // Adjust spacing between nodes (Columns)
-            treeSpacing: 300, // Adjust spacing between subtrees
-            edgeMinimization: true
-        }
+// Initialize Cytoscape
+var cy = cytoscape({
+  container: document.getElementById('mynetwork'), // Container to render in
+  elements: elements,
+style: [
+  {
+    selector: 'node',
+    style: {
+      'border-color': '#000000',
+      'label': 'data(label)',
+      'color': '#000000',
+      'shape': 'ellipse', // This makes the node a circle
+      'text-valign': 'center',
+      'text-halign': 'center',
+      'font-size': '10px', // Adjust the font size
+      'width': '60px',          // Width of the node (circle's diameter)
+      'height': '60px',         // Height of the node (circle's diameter)
+      'padding': '10px', // Add some padding around the text
+      'text-wrap': 'wrap', // Allow text to wrap inside the node
+      'text-max-width': '55px' // Set a maximum width for wrapped text
     }
-  
-};
-var network = new vis.Network(container, data, options);
+  },
+  {
+    selector: 'edge',
+    style: {
+      'width': 2,
+      'line-color': '#000000',
+      'target-arrow-color': '#000000',
+      'target-arrow-shape': 'triangle',
+      'z-index': 1
 
+    }
+  }
+],
+  layout: {
+    name: 'dagre', // 'cose' is a force-directed layout
+    rankDir: 'TB', // Top-to-bottom direction
+   ranker: 'network-simplex' // Alternative options: 'tight-tree', 'longest-path'
+  }
+});
