@@ -60,6 +60,7 @@ style: [
   {
     selector: 'edge',
     style: {
+      'curve-style': 'bezier',
       'width': 2,
       'line-color': '#000000',
       'target-arrow-color': '#000000',
