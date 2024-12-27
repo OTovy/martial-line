@@ -44,6 +44,7 @@ style: [
     selector: 'node',
     style: {
       'border-color': '#000000',
+      'border-width': 2,
       'label': 'data(label)',
       'color': '#000000',
       'background-opacity': 0,
