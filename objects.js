@@ -1,5 +1,22 @@
 
 var nodes_list = [
+
+  /*
+  Sumo:
+  Raiden Tameemon
+  Onogawa Kisaburō
+  Tanikaze Kajinosuke
+
+  stable groups:
+  Dewanoumi, Nishonoseki, Takasago, Tokitsukaze, and Isegahama
+  Isenoumi part of Tokitsukaze
+  
+  Onogawa Kisaburō trained at Kusazuri → Onogawa
+  Tanikaze Kajinosuke trained at Isegahama
+  Isenoumi and teacher of Raiden Tameemon who trained at Isenoumi
+
+  
+  */
   {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Southern Shaolin", "Five Elders", "Tode"]},
   {"id": "Southern Shaolin", "label": "Southern Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)"]},
 
