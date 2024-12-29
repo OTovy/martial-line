@@ -35,6 +35,7 @@ nodes_list.forEach(node => {
   });
 });
 
+
 // Initialize Cytoscape
 var cy = cytoscape({
   container: document.getElementById('mynetwork'), // Container to render in
@@ -80,6 +81,13 @@ style: [
   }
 });
 
+
+// Set the position for each node
+positionsList.forEach(item => {
+  const node = cy.getElementById(item.id); // Get the node by ID
+    node.position(item.position); // Set the node's position
+});
+
 // Log all node positions when any node is moved
 cy.on('free', 'node', function () {
   const nodePositions = cy.nodes().map(node => ({
@@ -88,4 +96,6 @@ cy.on('free', 'node', function () {
   }));
   console.log('Node positions after drop:', nodePositions);
 });
+
+
 
