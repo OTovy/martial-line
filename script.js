@@ -81,36 +81,43 @@ style: [
     }
 });
 
-// Function to dynamically adjust edge curves
-function adjustEdgeCurves(node) {
-  node.connectedEdges().forEach(edge => {
-    const source = edge.source();
-    const target = edge.target();
 
-    // Calculate a dynamic curve distance based on the current positions
-    const dx = target.position().x - source.position().x;
-    const dy = target.position().y - source.position().y;
-    const distance = Math.sqrt(dx * dx + dy * dy);
+    // Function to dynamically curve edges during drag
+    function updateEdgeCurves(node) {
+      node.connectedEdges().forEach(edge => {
+        const source = edge.source();
+        const target = edge.target();
 
-    // Set a control-point distance proportional to the distance between nodes
-    const controlPointDistance = Math.min(100, distance / 4); // Cap at 100 for very long edges
-    edge.style('control-point-distance', controlPointDistance);
-  });
-}
+        // Skip if the node is not involved in the edge
+        if (node.id() !== source.id() && node.id() !== target.id()) return;
 
-// Adjust edge curves dynamically during drag
-cy.on('drag', 'node', (event) => {
-  const node = event.target;
-  adjustEdgeCurves(node);
-});
+        // Calculate positions
+        const dx = target.position().x - source.position().x;
+        const dy = target.position().y - source.position().y;
 
-// Set the position for each node
-positionsList.forEach(item => {
-  const node = cy.getElementById(item.id); // Get the node by ID
-    node.position(item.position); // Set the node's position
-});
+        // Calculate dynamic control-point distance based on distance
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        const controlPointDistance = Math.min(100, distance / 4);
 
-cy.nodes().forEach(node => adjustEdgeCurves(node));
+        // Apply the dynamic control-point distance
+        edge.style('control-point-distance', controlPointDistance);
+      });
+    }
+
+    // Adjust edge curves dynamically during node drag
+    cy.on('drag', 'node', event => {
+      const node = event.target;
+      updateEdgeCurves(node);
+    });
+
+    // Final adjustment on drag release
+    cy.on('dragfree', 'node', event => {
+      const node = event.target;
+      updateEdgeCurves(node);
+    });
+
+    // Initial edge curve adjustments
+    cy.nodes().forEach(node => updateEdgeCurves(node));
 
 // Log all node positions when any node is moved
 cy.on('free', 'node', function () {
