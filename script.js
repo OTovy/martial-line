@@ -64,6 +64,7 @@ style: [
     selector: 'edge',
     style: {
       'curve-style': 'bezier', // Use bezier style for curves
+      'control-point-distance': 0, // Initial curve distance
       'width': 2,
       'line-color': '#000000',
       'target-arrow-color': '#000000',
@@ -118,6 +119,12 @@ style: [
 
     // Initial edge curve adjustments
     cy.nodes().forEach(node => updateEdgeCurves(node));
+
+// Set the position for each node
+positionsList.forEach(item => {
+  const node = cy.getElementById(item.id); // Get the node by ID
+    node.position(item.position); // Set the node's position
+});
 
 // Log all node positions when any node is moved
 cy.on('free', 'node', function () {
