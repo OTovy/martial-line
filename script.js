@@ -63,7 +63,7 @@ style: [
   {
     selector: 'edge',
     style: {
-      'curve-style': 'segment',
+      'curve-style': 'segments',
       'width': 2,
       'line-color': '#000000',
       'target-arrow-color': '#000000',
