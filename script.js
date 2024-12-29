@@ -81,11 +81,11 @@ style: [
 });
 
 // Log all node positions when any node is moved
-cy.on('position', 'node', function () {
+cy.on('free', 'node', function () {
   const nodePositions = cy.nodes().map(node => ({
     id: node.id(),
     position: node.position()
   }));
-  console.log('Node positions:', nodePositions);
+  console.log('Node positions after drop:', nodePositions);
 });
 
