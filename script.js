@@ -63,9 +63,7 @@ style: [
   {
     selector: 'edge',
     style: {
-    'curve-style': 'unbundled-bezier',
-    'control-point-distances': [40, -40], // Adjust control points
-    'control-point-weights': [0.25, 0.75], // Adjust curvature weight
+      'curve-style': 'bezier', // Use bezier style for curves
       'width': 2,
       'line-color': '#000000',
       'target-arrow-color': '#000000',
@@ -83,6 +81,28 @@ style: [
     }
 });
 
+// Function to dynamically adjust edge curves
+function adjustEdgeCurves(node) {
+  node.connectedEdges().forEach(edge => {
+    const source = edge.source();
+    const target = edge.target();
+
+    // Calculate a dynamic curve distance based on the current positions
+    const dx = target.position().x - source.position().x;
+    const dy = target.position().y - source.position().y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    // Set a control-point distance proportional to the distance between nodes
+    const controlPointDistance = Math.min(100, distance / 4); // Cap at 100 for very long edges
+    edge.style('control-point-distance', controlPointDistance);
+  });
+}
+
+// Adjust edge curves dynamically during drag
+cy.on('drag', 'node', (event) => {
+  const node = event.target;
+  adjustEdgeCurves(node);
+});
 
 // Set the position for each node
 positionsList.forEach(item => {
