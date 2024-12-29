@@ -35,7 +35,6 @@ nodes_list.forEach(node => {
   });
 });
 
-cytoscape.use(cytoscapeDagre);
 
 // Initialize Cytoscape
 var cy = cytoscape({
@@ -84,43 +83,6 @@ style: [
     }
 });
 
-
-    // Function to dynamically curve edges during drag
-    function updateEdgeCurves(node) {
-      node.connectedEdges().forEach(edge => {
-        const source = edge.source();
-        const target = edge.target();
-
-        // Skip if the node is not involved in the edge
-        if (node.id() !== source.id() && node.id() !== target.id()) return;
-
-        // Calculate positions
-        const dx = target.position().x - source.position().x;
-        const dy = target.position().y - source.position().y;
-
-        // Calculate dynamic control-point distance based on distance
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        const controlPointDistance = Math.min(100, distance / 4);
-
-        // Apply the dynamic control-point distance
-        edge.style('control-point-distance', controlPointDistance);
-      });
-    }
-
-    // Adjust edge curves dynamically during node drag
-    cy.on('drag', 'node', event => {
-      const node = event.target;
-      updateEdgeCurves(node);
-    });
-
-    // Final adjustment on drag release
-    cy.on('dragfree', 'node', event => {
-      const node = event.target;
-      updateEdgeCurves(node);
-    });
-
-    // Initial edge curve adjustments
-    cy.nodes().forEach(node => updateEdgeCurves(node));
 
 // Set the position for each node
 positionsList.forEach(item => {
