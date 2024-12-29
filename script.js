@@ -80,6 +80,13 @@ style: [
   }
 });
 
+
+// Set the position for each node
+positionsList.forEach(item => {
+  const node = cy.getElementById(item.id); // Get the node by ID
+    node.position(item.position); // Set the node's position
+});
+
 // Log all node positions when any node is moved
 cy.on('free', 'node', function () {
   const nodePositions = cy.nodes().map(node => ({
