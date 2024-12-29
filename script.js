@@ -68,7 +68,9 @@ style: [
       'line-color': '#000000',
       'target-arrow-color': '#000000',
       'target-arrow-shape': 'triangle',
-      'z-index': 1
+      'z-index': 1,
+      'control-point-distance': 50, // Optional: Add control points
+      'control-point-weight': 0.5   // Optional: Add control weight
 
     }
   }
