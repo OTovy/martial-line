@@ -330,4 +330,2276 @@ var nodes_list = [
 ];
 
 
-export { nodes_list };  
+const positionsList = [
+
+    {
+        "id": "Hosokawa Clan",
+        "position": {
+            "x": 513,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Sumo",
+        "position": {
+            "x": 1301,
+            "y": 965
+        }
+    },
+    {
+        "id": "Tokitsukaze Ichimon",
+        "position": {
+            "x": 1565,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Isenoumi Heya",
+        "position": {
+            "x": 721,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Kusazuri Heya",
+        "position": {
+            "x": 11867,
+            "y": 41
+        }
+    },
+    {
+        "id": "Onogawa Heya",
+        "position": {
+            "x": 11999,
+            "y": 41
+        }
+    },
+    {
+        "id": "Isa Tomomune",
+        "position": {
+            "x": 173,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Date Clan",
+        "position": {
+            "x": 381,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Tanikaze Kajinosuke",
+        "position": {
+            "x": 259,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Samurai",
+        "position": {
+            "x": 1169,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Shaolin",
+        "position": {
+            "x": 4071,
+            "y": 569
+        }
+    },
+    {
+        "id": "Southern Shaolin",
+        "position": {
+            "x": 1849,
+            "y": 701
+        }
+    },
+    {
+        "id": "Five Elders",
+        "position": {
+            "x": 3351,
+            "y": 701
+        }
+    },
+    {
+        "id": "Miu Hin",
+        "position": {
+            "x": 2349,
+            "y": 833
+        }
+    },
+    {
+        "id": "Ji Sin",
+        "position": {
+            "x": 3605,
+            "y": 833
+        }
+    },
+    {
+        "id": "Bak Mei",
+        "position": {
+            "x": 3737,
+            "y": 833
+        }
+    },
+    {
+        "id": "Hakka",
+        "position": {
+            "x": 2793,
+            "y": 833
+        }
+    },
+    {
+        "id": "Five Elder Families",
+        "position": {
+            "x": 4153,
+            "y": 965
+        }
+    },
+    {
+        "id": "Lau Saam Ngan",
+        "position": {
+            "x": 3709,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Mok Ching Giu",
+        "position": {
+            "x": 3841,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Hung Hei-gun",
+        "position": {
+            "x": 4105,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Choy Gau Yi",
+        "position": {
+            "x": 4417,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Lei Yau Saan",
+        "position": {
+            "x": 4549,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Hung Ga",
+        "position": {
+            "x": 4105,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Choy Ga",
+        "position": {
+            "x": 4417,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Lei Ga",
+        "position": {
+            "x": 4549,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Fut Ga Buddha Family",
+        "position": {
+            "x": 4181,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Chan Heung",
+        "position": {
+            "x": 2957,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Yim Wing Chun",
+        "position": {
+            "x": 2349,
+            "y": 965
+        }
+    },
+    {
+        "id": "Leung Bok-chao",
+        "position": {
+            "x": 2037,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Leung Jan",
+        "position": {
+            "x": 2519,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Ip Man",
+        "position": {
+            "x": 2651,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Bruce Lee",
+        "position": {
+            "x": 1939,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Joseph Cowles",
+        "position": {
+            "x": 2513,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Wing Chun",
+        "position": {
+            "x": 2887,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Lama Pai (Lions Roar)",
+        "position": {
+            "x": 2235,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Adatuo",
+        "position": {
+            "x": 1621,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Wong Yan-lam",
+        "position": {
+            "x": 2071,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Wong Lam-hoi",
+        "position": {
+            "x": 1401,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Luo Han Quan (Monk Fist)",
+        "position": {
+            "x": 1849,
+            "y": 833
+        }
+    },
+    {
+        "id": "Fang Zhengdong",
+        "position": {
+            "x": 1905,
+            "y": 965
+        }
+    },
+    {
+        "id": "Fang Qiniang",
+        "position": {
+            "x": 1905,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Fujian White Crane",
+        "position": {
+            "x": 995,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Ryu Ryu Ko",
+        "position": {
+            "x": 787,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Higaonna Kanryo",
+        "position": {
+            "x": 1853,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Miyagi Chojun",
+        "position": {
+            "x": 1589,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Goju Ryu",
+        "position": {
+            "x": 1589,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Wai Xinxian",
+        "position": {
+            "x": 3057,
+            "y": 833
+        }
+    },
+    {
+        "id": "Arakaki Seisho",
+        "position": {
+            "x": 3321,
+            "y": 965
+        }
+    },
+    {
+        "id": "Uechi Kanbun",
+        "position": {
+            "x": 2963,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Kyoda Juhatsu",
+        "position": {
+            "x": 1721,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Nakaima Keko",
+        "position": {
+            "x": 2117,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Tode",
+        "position": {
+            "x": 5995,
+            "y": 701
+        }
+    },
+    {
+        "id": "Naha Te",
+        "position": {
+            "x": 4823,
+            "y": 833
+        }
+    },
+    {
+        "id": "Kogusuku (Kojo) Uekata",
+        "position": {
+            "x": 4813,
+            "y": 965
+        }
+    },
+    {
+        "id": "Kogusuku Pechin",
+        "position": {
+            "x": 4813,
+            "y": 1097
+        }
+    },
+    {
+        "id": "San Shoi",
+        "position": {
+            "x": 4813,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Iwah",
+        "position": {
+            "x": 2519,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Waishinzan",
+        "position": {
+            "x": 12131,
+            "y": 41
+        }
+    },
+    {
+        "id": "Kogusuku Isei",
+        "position": {
+            "x": 4331,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Kogusuku Kaho",
+        "position": {
+            "x": 2777,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Maeri Ranho",
+        "position": {
+            "x": 2249,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Kogusuku Saikyo",
+        "position": {
+            "x": 2711,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Kogusuku Shuren",
+        "position": {
+            "x": 2249,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Kogusuku Kafu",
+        "position": {
+            "x": 2513,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Tomari Te",
+        "position": {
+            "x": 5087,
+            "y": 965
+        }
+    },
+    {
+        "id": "Kishin Teruya",
+        "position": {
+            "x": 5011,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Karyu Sokyu",
+        "position": {
+            "x": 5219,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Kousaku Matsumora",
+        "position": {
+            "x": 5077,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Koho Kuba",
+        "position": {
+            "x": 5171,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Kotasu Iha",
+        "position": {
+            "x": 3759,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Chotoku Kyan",
+        "position": {
+            "x": 6213,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Shoshin Nagamine",
+        "position": {
+            "x": 4957,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Shuri Te",
+        "position": {
+            "x": 7471,
+            "y": 833
+        }
+    },
+    {
+        "id": "Kanga Sakugawa",
+        "position": {
+            "x": 7471,
+            "y": 965
+        }
+    },
+    {
+        "id": "Sokon Matsumura",
+        "position": {
+            "x": 7471,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Choyu Motobu",
+        "position": {
+            "x": 5507,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Choki Motobu",
+        "position": {
+            "x": 5903,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Motobo Ryu",
+        "position": {
+            "x": 6387,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Motobo Udundi",
+        "position": {
+            "x": 4429,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Hironori Otsuka",
+        "position": {
+            "x": 5685,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Tatsuo Yamada",
+        "position": {
+            "x": 5817,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Yasuhiro Konishi",
+        "position": {
+            "x": 5949,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Kenwa Mabuni",
+        "position": {
+            "x": 6717,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Joen Nakazato",
+        "position": {
+            "x": 6849,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Zenryo Shimabukuro",
+        "position": {
+            "x": 7047,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Kenyu Yabu",
+        "position": {
+            "x": 7123,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Aanko Asato",
+        "position": {
+            "x": 7463,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Aanko Itosu",
+        "position": {
+            "x": 7595,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Chofu Kyan",
+        "position": {
+            "x": 7859,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Gichin Funakoshi",
+        "position": {
+            "x": 7123,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Chomo Hanashiro",
+        "position": {
+            "x": 7463,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Choshin Chibana",
+        "position": {
+            "x": 7595,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Izumo Kanja Yoshiteru",
+        "position": {
+            "x": 12263,
+            "y": 41
+        }
+    },
+    {
+        "id": "Iizasa Choisai Lenao",
+        "position": {
+            "x": 11735,
+            "y": 41
+        }
+    },
+    {
+        "id": "Tenshin Shoden Katori Shinto Ryu",
+        "position": {
+            "x": 11735,
+            "y": 173
+        }
+    },
+    {
+        "id": "Jujutsu",
+        "position": {
+            "x": 8353.541501507607,
+            "y": -275.7616450947179
+        }
+    },
+    {
+        "id": "Yoshin-ryu",
+        "position": {
+            "x": 8421,
+            "y": 173
+        }
+    },
+    {
+        "id": "Yamamoto Tamiza Hideya",
+        "position": {
+            "x": 8421,
+            "y": 305
+        }
+    },
+    {
+        "id": "Shin no Shinto-ryu",
+        "position": {
+            "x": 8883,
+            "y": 437
+        }
+    },
+    {
+        "id": "Hitotsuyanagi Oribe",
+        "position": {
+            "x": 7947,
+            "y": 569
+        }
+    },
+    {
+        "id": "Homma Jouemon",
+        "position": {
+            "x": 8883,
+            "y": 569
+        }
+    },
+    {
+        "id": "Iso Mataemon Ryukansai Minamoto no Masatari",
+        "position": {
+            "x": 8421,
+            "y": 701
+        }
+    },
+    {
+        "id": "Terada",
+        "position": {
+            "x": 9025,
+            "y": 701
+        }
+    },
+    {
+        "id": "Fukuno Shichirouemon n Masakatsu",
+        "position": {
+            "x": 9253,
+            "y": 701
+        }
+    },
+    {
+        "id": "Takenouchi Nakatsukasa daiyu Hisamori",
+        "position": {
+            "x": 12395,
+            "y": 41
+        }
+    },
+    {
+        "id": "Tenjin Shinyo Ryu",
+        "position": {
+            "x": 8421,
+            "y": 833
+        }
+    },
+    {
+        "id": "Kito Ryu",
+        "position": {
+            "x": 9187,
+            "y": 833
+        }
+    },
+    {
+        "id": "Iikubo Tsunetoshi",
+        "position": {
+            "x": 9187,
+            "y": 965
+        }
+    },
+    {
+        "id": "Mataemon Masatomo",
+        "position": {
+            "x": 8011,
+            "y": 965
+        }
+    },
+    {
+        "id": "Fukuda Hachinosuke",
+        "position": {
+            "x": 8421,
+            "y": 965
+        }
+    },
+    {
+        "id": "Kano Jigoro",
+        "position": {
+            "x": 8421,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Kodokan Judo",
+        "position": {
+            "x": 8421,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Tomita Tsunejiro",
+        "position": {
+            "x": 9007,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Kosen Judo",
+        "position": {
+            "x": 8153,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Four Guardians of the Kodokan",
+        "position": {
+            "x": 8345,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Mataichiro Iso",
+        "position": {
+            "x": 4237,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Kentaro Inoue",
+        "position": {
+            "x": 9111,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Takisaburo Tobari",
+        "position": {
+            "x": 7727,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Otani Nobutomo",
+        "position": {
+            "x": 3973,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Saigo Tanomo",
+        "position": {
+            "x": 249,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Toma Shibuya",
+        "position": {
+            "x": 4681,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Sakakibara Kenkichi",
+        "position": {
+            "x": 1763,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Takeda Sokaku",
+        "position": {
+            "x": 1555,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Morihei Ueshiba",
+        "position": {
+            "x": 4561,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Mitsuyo Maeda",
+        "position": {
+            "x": 9007,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Carlos Gracie",
+        "position": {
+            "x": 8941,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Helio Gracie",
+        "position": {
+            "x": 8863,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Carlos Gracie Jr.",
+        "position": {
+            "x": 8917,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Carlinhos Gracie",
+        "position": {
+            "x": 8917,
+            "y": 2153
+        }
+    },
+    {
+        "id": "Gigo Funakoshi",
+        "position": {
+            "x": 7123,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Gogen Yamaguchi",
+        "position": {
+            "x": 1589,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Masutatsu Oyama",
+        "position": {
+            "x": 4507,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Wudang",
+        "position": {
+            "x": 11141,
+            "y": 41
+        }
+    },
+    {
+        "id": "Daoyin",
+        "position": {
+            "x": 8959,
+            "y": 305
+        }
+    },
+    {
+        "id": "Qi Jiguang",
+        "position": {
+            "x": 10121,
+            "y": 173
+        }
+    },
+    {
+        "id": "Jixiao Xinshu",
+        "position": {
+            "x": 9223,
+            "y": 305
+        }
+    },
+    {
+        "id": "Lianbing Shiji",
+        "position": {
+            "x": 10877,
+            "y": 305
+        }
+    },
+    {
+        "id": "Chen Tuan",
+        "position": {
+            "x": 9091,
+            "y": 173
+        }
+    },
+    {
+        "id": "Zhang Sanfeng",
+        "position": {
+            "x": 11141,
+            "y": 173
+        }
+    },
+    {
+        "id": "Wang Zongyue",
+        "position": {
+            "x": 11075,
+            "y": 305
+        }
+    },
+    {
+        "id": "Chen Wangting",
+        "position": {
+            "x": 10121,
+            "y": 437
+        }
+    },
+    {
+        "id": "Jiang Fa",
+        "position": {
+            "x": 11207,
+            "y": 437
+        }
+    },
+    {
+        "id": "Xing Xihuai",
+        "position": {
+            "x": 11207,
+            "y": 569
+        }
+    },
+    {
+        "id": "Zhang Chucheni",
+        "position": {
+            "x": 11207,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Jingbo",
+        "position": {
+            "x": 11197,
+            "y": 833
+        }
+    },
+    {
+        "id": "Zhang Zongyu",
+        "position": {
+            "x": 11197,
+            "y": 965
+        }
+    },
+    {
+        "id": "Zhang Yan",
+        "position": {
+            "x": 11197,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Chen Qingping",
+        "position": {
+            "x": 11187,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Chen Zhongshen",
+        "position": {
+            "x": 10989,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Chen Xin",
+        "position": {
+            "x": 10989,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Wu Yuxiang",
+        "position": {
+            "x": 11197,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Li Yiyu",
+        "position": {
+            "x": 11197,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Hao Weizhen",
+        "position": {
+            "x": 11197,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Sun Lutang",
+        "position": {
+            "x": 11131,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Sun Jianyun",
+        "position": {
+            "x": 11131,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Sun Yongtian",
+        "position": {
+            "x": 11131,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Hao Yueru",
+        "position": {
+            "x": 11263,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Hao Shaoru",
+        "position": {
+            "x": 11263,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Liu Jishun",
+        "position": {
+            "x": 11263,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Song Yunhua",
+        "position": {
+            "x": 12527,
+            "y": 41
+        }
+    },
+    {
+        "id": "Chen Kezhong",
+        "position": {
+            "x": 10989,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Chen Boxiang",
+        "position": {
+            "x": 10989,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Lu Zhizhong",
+        "position": {
+            "x": 10989,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Chen Ruxin",
+        "position": {
+            "x": 9517,
+            "y": 569
+        }
+    },
+    {
+        "id": "Chen Dakun",
+        "position": {
+            "x": 9451,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Shantong",
+        "position": {
+            "x": 9451,
+            "y": 833
+        }
+    },
+    {
+        "id": "Chen Dapeng",
+        "position": {
+            "x": 9583,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Shanzhi",
+        "position": {
+            "x": 9583,
+            "y": 833
+        }
+    },
+    {
+        "id": "Chen Suole",
+        "position": {
+            "x": 10329,
+            "y": 569
+        }
+    },
+    {
+        "id": "Chen Guangyin",
+        "position": {
+            "x": 9735,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Jixia",
+        "position": {
+            "x": 9735,
+            "y": 833
+        }
+    },
+    {
+        "id": "Chen Zhengru",
+        "position": {
+            "x": 10689,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Jie",
+        "position": {
+            "x": 10669,
+            "y": 833
+        }
+    },
+    {
+        "id": "Chen Gongzhao",
+        "position": {
+            "x": 10669,
+            "y": 965
+        }
+    },
+    {
+        "id": "Chen Bingwang",
+        "position": {
+            "x": 9791,
+            "y": 965
+        }
+    },
+    {
+        "id": "Chen Changxing",
+        "position": {
+            "x": 9791,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Chen Gengyun",
+        "position": {
+            "x": 9923,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Chen Yanxi",
+        "position": {
+            "x": 9923,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Chen Fake",
+        "position": {
+            "x": 9923,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Chen Zhaopi",
+        "position": {
+            "x": 9565,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Chen Zhaokui",
+        "position": {
+            "x": 9999,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Chen Xiaowang",
+        "position": {
+            "x": 9923,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Chen Youben",
+        "position": {
+            "x": 10669,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Yang Luchan",
+        "position": {
+            "x": 10527,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Wang Lanting",
+        "position": {
+            "x": 10857,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Yang Jianhou",
+        "position": {
+            "x": 10593,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Yang Chengfu",
+        "position": {
+            "x": 10593,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Zhang Qinlin",
+        "position": {
+            "x": 10857,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Yang Zhenduo",
+        "position": {
+            "x": 10725,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Yang Jun",
+        "position": {
+            "x": 10725,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Yang Style",
+        "position": {
+            "x": 10725,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Yang Banhou",
+        "position": {
+            "x": 10131,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Wang Jiaoyu",
+        "position": {
+            "x": 10197,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Wu Quanyou",
+        "position": {
+            "x": 10329,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Wu Jianquan",
+        "position": {
+            "x": 10329,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Wu Gongyi",
+        "position": {
+            "x": 10329,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Wu Yanxia",
+        "position": {
+            "x": 10461,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Wu Kuang-yu",
+        "position": {
+            "x": 10461,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Yun Mu Kwan",
+        "position": {
+            "x": 8609,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Chun Sang Sup",
+        "position": {
+            "x": 8545,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Ji Do Kwan",
+        "position": {
+            "x": 8545,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Lee Kyo Yoon",
+        "position": {
+            "x": 8545,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Yoon Byung-In",
+        "position": {
+            "x": 7331,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Chang Moo Kwan",
+        "position": {
+            "x": 7331,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Park Chul Hee",
+        "position": {
+            "x": 7265,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Hong Jong Pyo",
+        "position": {
+            "x": 7875,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Ro Byung Jik",
+        "position": {
+            "x": 7199,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Subak",
+        "position": {
+            "x": 5639,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Taekkyon",
+        "position": {
+            "x": 5351,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Hwang Kee",
+        "position": {
+            "x": 3495,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Lee Won-kuk",
+        "position": {
+            "x": 6081,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Chung Do Kwan",
+        "position": {
+            "x": 4551,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Lee Yong Woo",
+        "position": {
+            "x": 3447,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Choi Hong Hi",
+        "position": {
+            "x": 4617,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Lai",
+        "position": {
+            "x": 11405,
+            "y": 173
+        }
+    },
+    {
+        "id": "Wu Zhong",
+        "position": {
+            "x": 11471,
+            "y": 305
+        }
+    },
+    {
+        "id": "Yoshida Family",
+        "position": {
+            "x": 391,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Dewanoumi Ichimon",
+        "position": {
+            "x": 41,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Nishonoseki Ichimon",
+        "position": {
+            "x": 1301,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Takasago Ichimon",
+        "position": {
+            "x": 1433,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Isegahama Ichimon",
+        "position": {
+            "x": 1707,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Nishikigi Tetsuya",
+        "position": {
+            "x": 523,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Wakaikari",
+        "position": {
+            "x": 655,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Onogawa Kisaburo",
+        "position": {
+            "x": 11999,
+            "y": 173
+        }
+    },
+    {
+        "id": "Raiden Tameemon",
+        "position": {
+            "x": 259,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Fung Dou Dak",
+        "position": {
+            "x": 2529,
+            "y": 833
+        }
+    },
+    {
+        "id": "Ng Mui",
+        "position": {
+            "x": 2925,
+            "y": 833
+        }
+    },
+    {
+        "id": "Bak Mei Pai",
+        "position": {
+            "x": 2991,
+            "y": 965
+        }
+    },
+    {
+        "id": "Southern Praying Mantis",
+        "position": {
+            "x": 2641,
+            "y": 965
+        }
+    },
+    {
+        "id": "Southern Dragon",
+        "position": {
+            "x": 2773,
+            "y": 965
+        }
+    },
+    {
+        "id": "Phoenix Eye Fist (Chuka Shaolin)",
+        "position": {
+            "x": 3123,
+            "y": 965
+        }
+    },
+    {
+        "id": "Lau Ga",
+        "position": {
+            "x": 3709,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Mok Ga",
+        "position": {
+            "x": 3841,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Choy Lei Fut",
+        "position": {
+            "x": 2957,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Leung Yee-tai",
+        "position": {
+            "x": 2811,
+            "y": 1097
+        }
+    },
+    {
+        "id": "Leung Lan-kwai",
+        "position": {
+            "x": 1127,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Wong Wah-bo",
+        "position": {
+            "x": 1259,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Chan Wan-shun",
+        "position": {
+            "x": 2387,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Jeet Kune Do",
+        "position": {
+            "x": 2381,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Wu Wei",
+        "position": {
+            "x": 2513,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Hop Ga",
+        "position": {
+            "x": 2645,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Pak Hok Pai (Tibetan White Crane)",
+        "position": {
+            "x": 853,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Incense Shop Boxing",
+        "position": {
+            "x": 1773,
+            "y": 965
+        }
+    },
+    {
+        "id": "Nakaima Kenri",
+        "position": {
+            "x": 1853,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Nakaima Kenchu",
+        "position": {
+            "x": 1985,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Pangal-noon (Uechi Ryu)",
+        "position": {
+            "x": 2963,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Toon Ryu",
+        "position": {
+            "x": 1721,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Ryuei Ryu",
+        "position": {
+            "x": 2117,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Kogusuku Taitei",
+        "position": {
+            "x": 12131,
+            "y": 173
+        }
+    },
+    {
+        "id": "Kojo Ryu",
+        "position": {
+            "x": 2513,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Giel Yamada",
+        "position": {
+            "x": 4945,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Kokan Oyadomari",
+        "position": {
+            "x": 5209,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Kosei Nakamoto",
+        "position": {
+            "x": 4297,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Chojin Kuba",
+        "position": {
+            "x": 3627,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Seiyu Nakasone",
+        "position": {
+            "x": 3759,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Matsubayashi Ryu (Shorin)",
+        "position": {
+            "x": 4901,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Shorinji Ryu",
+        "position": {
+            "x": 5089,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Ryosei Kuwae",
+        "position": {
+            "x": 7991,
+            "y": 1229
+        }
+    },
+    {
+        "id": "Chosei Motobu",
+        "position": {
+            "x": 4825,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Wado Ryu",
+        "position": {
+            "x": 4155,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Nihon Kenpo Karatedo",
+        "position": {
+            "x": 4287,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Shinto Jinen Ryu",
+        "position": {
+            "x": 4419,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Shito Ryu",
+        "position": {
+            "x": 6849,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Seibukan",
+        "position": {
+            "x": 7047,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Kanken Toyama",
+        "position": {
+            "x": 7859,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Shotokan Karate",
+        "position": {
+            "x": 6783,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Kobayashi Ryu (Shorin)",
+        "position": {
+            "x": 7463,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Shudokan",
+        "position": {
+            "x": 7595,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Shinden Fudo Ryu",
+        "position": {
+            "x": 12263,
+            "y": 173
+        }
+    },
+    {
+        "id": "Nakamura-ryu",
+        "position": {
+            "x": 11603,
+            "y": 305
+        }
+    },
+    {
+        "id": "Meifu Shinkage-ryu",
+        "position": {
+            "x": 11735,
+            "y": 305
+        }
+    },
+    {
+        "id": "Shinto Muso-ryu",
+        "position": {
+            "x": 11867,
+            "y": 305
+        }
+    },
+    {
+        "id": "Yagyū Shinkage-ryu",
+        "position": {
+            "x": 11999,
+            "y": 305
+        }
+    },
+    {
+        "id": "Ryoi Shinto Ryu",
+        "position": {
+            "x": 9319,
+            "y": 833
+        }
+    },
+    {
+        "id": "Takenouchi Ryu",
+        "position": {
+            "x": 12395,
+            "y": 173
+        }
+    },
+    {
+        "id": "Kyuzo Mifune",
+        "position": {
+            "x": 8477,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Masahiko Kimura",
+        "position": {
+            "x": 8681,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Yokoyama Sakujiro",
+        "position": {
+            "x": 9413,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Saigo Shiro",
+        "position": {
+            "x": 8813,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Yamashita Yoshitsugu",
+        "position": {
+            "x": 9545,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Daito Ryu",
+        "position": {
+            "x": 985,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Aikido",
+        "position": {
+            "x": 4023,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Luiz Franca",
+        "position": {
+            "x": 9287,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Oswaldo Fadda",
+        "position": {
+            "x": 9479,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Rickson Gracie",
+        "position": {
+            "x": 8653,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Royce Gracie",
+        "position": {
+            "x": 8785,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Relson Gracie",
+        "position": {
+            "x": 9049,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Rolls Gracie",
+        "position": {
+            "x": 9181,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Rorion Gracie",
+        "position": {
+            "x": 9313,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Jean Jacques Machado",
+        "position": {
+            "x": 9445,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Gracie Barra",
+        "position": {
+            "x": 8917,
+            "y": 2285
+        }
+    },
+    {
+        "id": "Kyokushin Karate",
+        "position": {
+            "x": 4507,
+            "y": 2153
+        }
+    },
+    {
+        "id": "Liuhebafa Quan",
+        "position": {
+            "x": 9091,
+            "y": 305
+        }
+    },
+    {
+        "id": "Neijia",
+        "position": {
+            "x": 11207,
+            "y": 305
+        }
+    },
+    {
+        "id": "Chen Tai Chi",
+        "position": {
+            "x": 9091,
+            "y": 569
+        }
+    },
+    {
+        "id": "He Zhaoyuan",
+        "position": {
+            "x": 11329,
+            "y": 1361
+        }
+    },
+    {
+        "id": "Sun Style",
+        "position": {
+            "x": 11131,
+            "y": 2153
+        }
+    },
+    {
+        "id": "Wu (Hao) Style",
+        "position": {
+            "x": 11263,
+            "y": 2153
+        }
+    },
+    {
+        "id": "Chen Small Frame",
+        "position": {
+            "x": 10989,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Chen Bingqi",
+        "position": {
+            "x": 9527,
+            "y": 965
+        }
+    },
+    {
+        "id": "Chen Bingren",
+        "position": {
+            "x": 9659,
+            "y": 965
+        }
+    },
+    {
+        "id": "Chen Shenru",
+        "position": {
+            "x": 9867,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Xunru",
+        "position": {
+            "x": 9999,
+            "y": 701
+        }
+    },
+    {
+        "id": "Chen Xiaoxing",
+        "position": {
+            "x": 10055,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Chen Style",
+        "position": {
+            "x": 9923,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Li Ruidong",
+        "position": {
+            "x": 10857,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Cheng Man-ching",
+        "position": {
+            "x": 10461,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Fu Zhongwen",
+        "position": {
+            "x": 10593,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Wang Yannian",
+        "position": {
+            "x": 10857,
+            "y": 1757
+        }
+    },
+    {
+        "id": "Yang Kuk Jin",
+        "position": {
+            "x": 10725,
+            "y": 2021
+        }
+    },
+    {
+        "id": "Yang Shaohou",
+        "position": {
+            "x": 10065,
+            "y": 1493
+        }
+    },
+    {
+        "id": "Kuo Lien Ying",
+        "position": {
+            "x": 10197,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Cheng Tin Hung",
+        "position": {
+            "x": 10197,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Wu Style",
+        "position": {
+            "x": 10461,
+            "y": 2153
+        }
+    },
+    {
+        "id": "Han Moo Kwan",
+        "position": {
+            "x": 8545,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Kang Duk Won",
+        "position": {
+            "x": 7331,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Song Moo Kwan",
+        "position": {
+            "x": 7199,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Moo Duk Kwan",
+        "position": {
+            "x": 3495,
+            "y": 1625
+        }
+    },
+    {
+        "id": "Jung Do Kwan",
+        "position": {
+            "x": 3447,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Oh Do Kwan",
+        "position": {
+            "x": 4617,
+            "y": 1889
+        }
+    },
+    {
+        "id": "Pi",
+        "position": {
+            "x": 11339,
+            "y": 305
+        }
+    },
+    {
+        "id": "Baji Quan",
+        "position": {
+            "x": 11339,
+            "y": 437
+        }
+    },
+    {
+        "id": "Wu Ying",
+        "position": {
+            "x": 11537,
+            "y": 437
+        }
+    }
+];
+
+export { nodes_list, positionsList };  
