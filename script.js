@@ -76,8 +76,9 @@ style: [
   layout: {
     name: 'dagre', // 'cose' is a force-directed layout
     rankDir: 'TB', // Top-to-bottom direction
-   ranker: 'network-simplex' // Alternative options: 'tight-tree', 'longest-path'
-  }
+   ranker: 'network-simplex', // Alternative options: 'tight-tree', 'longest-path'
+  boxSelectionEnabled: true
+    }
 });
 
 
