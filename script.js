@@ -79,3 +79,12 @@ style: [
    ranker: 'network-simplex' // Alternative options: 'tight-tree', 'longest-path'
   }
 });
+
+// Log all node positions when any node is moved
+cy.on('position', 'node', function (event) {
+  console.log(`Node ${event.target.id()} moved.`); // Log the moved node's ID
+  cy.nodes().forEach(node => {
+    const position = node.position();
+    console.log(`Node ${node.id()} position:`, position);
+  });
+});
