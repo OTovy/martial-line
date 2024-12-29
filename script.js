@@ -35,6 +35,8 @@ nodes_list.forEach(node => {
   });
 });
 
+cytoscape.use(cytoscapeDagre);
+
 // Initialize Cytoscape
 var cy = cytoscape({
   container: document.getElementById('mynetwork'), // Container to render in
