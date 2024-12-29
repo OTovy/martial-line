@@ -110,6 +110,8 @@ positionsList.forEach(item => {
     node.position(item.position); // Set the node's position
 });
 
+cy.nodes().forEach(node => adjustEdgeCurves(node));
+
 // Log all node positions when any node is moved
 cy.on('free', 'node', function () {
   const nodePositions = cy.nodes().map(node => ({
