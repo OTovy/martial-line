@@ -63,7 +63,9 @@ style: [
   {
     selector: 'edge',
     style: {
-      'curve-style': 'segments',
+    'curve-style': 'unbundled-bezier',
+    'control-point-distances': [40, -40], // Adjust control points
+    'control-point-weights': [0.25, 0.75], // Adjust curvature weight
       'width': 2,
       'line-color': '#000000',
       'target-arrow-color': '#000000',
