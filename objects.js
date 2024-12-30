@@ -158,13 +158,15 @@ var nodes_list = [
   
   // Jujutsu
   
-  {"id": "Hisamori Tenenuchi", "label": "Hisamori Tenenuchi", "linked_nodes": ["Jujutsu"]},
-  {"id": "Jujutsu", "label": "Jujutsu", "linked_nodes": ["Yoshin-ryu"]},  {"id": "Yoshin-ryu", "label": "Yoshin-ryu", "linked_nodes": ["Yamamoto Tamiza Hideya"]},
+  {"id": "Takenouchi Hisamori", "label": "Takenouchi Hisamori", "linked_nodes": ["Takenouchi Ryu"]},
+  {"id": "Takenouchi Ryu", "label": "Takenouchi Ryu", "linked_nodes": ["Jujutsu"]},
+  {"id": "Jujutsu", "label": "Jujutsu", "linked_nodes": ["Yoshin Ryu"]},
+  {"id": "Yoshin Ryu", "label": "Yoshin Ryu", "linked_nodes": ["Yamamoto Tamiza Hideya"]},
   {"id": "Yamamoto Tamiza Hideya", "label": "Yamamoto o' Tamiza Hideya", "linked_nodes": ["Hitotsuyanagi Oribe", "Shin no Shinto-ryu"]},
   {"id": "Shin no Shinto-ryu", "label": "Shin no Shinto-ryu", "linked_nodes": ["Homma Jouemon"]},
   {"id": "Hitotsuyanagi Oribe", "label": "Hitotsuyanagi Oribe", "linked_nodes": ["Iso Mataemon Ryukansai Minamoto no Masatari"]},
   {"id": "Homma Jouemon", "label": "Homma Jouemon", "linked_nodes": ["Iso Mataemon Ryukansai Minamoto no Masatari"]},
-   {"id": "Iso Mataemon Ryukansai Minamoto no Masatari", "label": "Iso Mataemon Ryukansai Minamoto no Masatari", "linked_nodes": ["Tenjin Shinyo Ryu"]},
+  {"id": "Iso Mataemon Ryukansai Minamoto no Masatari", "label": "Iso Mataemon Ryukansai Minamoto no Masatari", "linked_nodes": ["Tenjin Shinyo Ryu"]},
   {"id": "Terada", "label": "Terada", "linked_nodes": ["Kito Ryu"]},
   {"id": "Fukuno Shichirouemon n Masakatsu", "label": "Fukuno Shichirouemon n Masakatsu", "linked_nodes": ["Ryoi Shinto Ryu", "Kito Ryu"]},
   {"id": "Takenouchi Nakatsukasa daiyu Hisamori", "label": "Takenouchi Nakatsukasa daiyu Hisamori", "linked_nodes": ["Takenouchi Ryu"]},
@@ -1043,7 +1045,7 @@ const positionsList =
         }
     },
     {
-        "id": "Yoshin-ryu",
+        "id": "Yoshin Ryu",
         "position": {
             "x": 7885.042081623077,
             "y": 319.7483794141624
