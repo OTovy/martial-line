@@ -169,7 +169,6 @@ var nodes_list = [
   {"id": "Iso Mataemon Ryukansai Minamoto no Masatari", "label": "Iso Mataemon Ryukansai Minamoto no Masatari", "linked_nodes": ["Tenjin Shinyo Ryu"]},
   {"id": "Terada", "label": "Terada", "linked_nodes": ["Kito Ryu"]},
   {"id": "Fukuno Shichirouemon n Masakatsu", "label": "Fukuno Shichirouemon n Masakatsu", "linked_nodes": ["Ryoi Shinto Ryu", "Kito Ryu"]},
-  {"id": "Takenouchi Nakatsukasa daiyu Hisamori", "label": "Takenouchi Nakatsukasa daiyu Hisamori", "linked_nodes": ["Takenouchi Ryu"]},
 
   {"id": "Tenjin Shinyo Ryu", "label": "Tenjin Shinyo Ryu", "linked_nodes": ["Mataemon Masatomo", "Fukuda Hachinosuke", "Kentaro Inoue"]},
   {"id": "Kito Ryu", "label": "Kito Ryu", "linked_nodes": ["Iikubo Tsunetoshi"]},
@@ -1098,13 +1097,6 @@ const positionsList =
         "position": {
             "x": 8263.049621526978,
             "y": 884.9990071001178
-        }
-    },
-    {
-        "id": "Takenouchi Nakatsukasa daiyu Hisamori",
-        "position": {
-            "x": 4615.8622816653515,
-            "y": 2262.0779416486516
         }
     },
     {
