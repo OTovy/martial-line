@@ -22,8 +22,9 @@ var nodes_list = [
     {"id": "Tanikaze Kajinosuke", "label": "Tanikaze Kajinosuke", "linked_nodes": ["Raiden Tameemon"]},
 
   
-    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["The Imperial clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
-    {"id": "The Imperial Clan", "label": "The Imperial Clan", "linked_nodes": ["Gempeitokitsu"]},
+    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["The Imperial clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan", "Miyamoto Musashi"]},
+    {"id": "Miyamoto Musashi", "label": "Miyamoto Musashi", "linked_nodes": ["Niten Ichi Ryu"]},
+  {"id": "The Imperial Clan", "label": "The Imperial Clan", "linked_nodes": ["Gempeitokitsu"]},
     {"id": "Gempeitokitsu", "label": "Gempeitokitsu", "linked_nodes": ["Taira Clan", "Minamoto Clan", "Fujiwara Clan", "Tachibana Clan"]},
     {"id": "Taira Clan", "label": "Taira Clan", "linked_nodes": ["Chiba Tsunetane"]},
     {"id": "Chiba Tsunetane", "label": "Chiba Tsunetane", "linked_nodes": ["Chiba Clan"]},
