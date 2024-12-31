@@ -22,13 +22,15 @@ var nodes_list = [
     {"id": "Tanikaze Kajinosuke", "label": "Tanikaze Kajinosuke", "linked_nodes": ["Raiden Tameemon"]},
 
   
-    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["Taira Clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
+    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["The Imperial clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
+    {"id": "The Imperial Clan", "label": "The Imperial Clan", "linked_nodes": ["Gempeitokitsu"]},
+    {"id": "Gempeitokitsu", "label": "Gempeitokitsu", "linked_nodes": ["Taira Clan", "Minamoto Clan", "Fujiwara Clan", "Tachibana Clan"]},
     {"id": "Taira Clan", "label": "Taira Clan", "linked_nodes": ["Chiba Tsunetane"]},
     {"id": "Chiba Tsunetane", "label": "Chiba Tsunetane", "linked_nodes": ["Chiba Clan"]},
 
     {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
 
-  {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)", "Five Elders", "Tode"]},
+   {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)", "Five Elders", "Tode"]},
 
   // Five Elders
   {"id": "Five Elders", "label": "Five Elders", "linked_nodes": ["Miu Hin", "Fung Dou Dak", "Ng Mui", "Ji Sin", "Bak Mei"]},
