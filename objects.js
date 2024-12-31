@@ -22,9 +22,12 @@ var nodes_list = [
     {"id": "Tanikaze Kajinosuke", "label": "Tanikaze Kajinosuke", "linked_nodes": ["Raiden Tameemon"]},
 
   
-    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
+    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["Taira clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
+    {"id": "Taira clan", "label": "Taira clan", "linked_nodes": ["Chiba Tsunetane"]},
+    {"id": "Chiba Tsunetane", "label": "Chiba Tsunetane", "linked_nodes": ["Chiba Clan"]},
 
-  
+    {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
+
   {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)", "Five Elders", "Tode"]},
 
   // Five Elders
@@ -151,7 +154,7 @@ var nodes_list = [
   {"id": "Choshin Chibana", "label": "Choshin Chibana", "linked_nodes": ["Shudokan"]},
 
   {"id": "Izumo Kanja Yoshiteru", "label": "Izumo Kanja Yoshiteru", "linked_nodes": ["Shinden Fudo Ryu"]},
-  {"id": "Iizasa Choisai Lenao", "label": "Iizasa Choisai Lenao", "linked_nodes": ["Tenshin Shoden Katori Shinto Ryu"]},
+  {"id": "Iizasa Choisai Ienao", "label": "Iizasa Choisai Ienao", "linked_nodes": ["Tenshin Shoden Katori Shinto Ryu"]},
   {"id": "Tenshin Shoden Katori Shinto Ryu", "label": "Tenshin Shoden Katori Shinto Ryu", "linked_nodes": ["Nakamura-ryu", "Meifu Shinkage-ryu", "Shinto Muso-ryu", "Yagyū Shinkage-ryu"]},
 
   
@@ -1015,7 +1018,7 @@ const positionsList =
         }
     },
     {
-        "id": "Iizasa Choisai Lenao",
+        "id": "Iizasa Choisai Ienao",
         "position": {
             "x": 3955.86228166535,
             "y": 2262.0779416486516
