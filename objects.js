@@ -22,8 +22,8 @@ var nodes_list = [
     {"id": "Tanikaze Kajinosuke", "label": "Tanikaze Kajinosuke", "linked_nodes": ["Raiden Tameemon"]},
 
   
-    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["Taira clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
-    {"id": "Taira clan", "label": "Taira clan", "linked_nodes": ["Chiba Tsunetane"]},
+    {"id": "Samurai", "label": "Samurai", "linked_nodes": ["Taira Clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
+    {"id": "Taira Clan", "label": "Taira Clan", "linked_nodes": ["Chiba Tsunetane"]},
     {"id": "Chiba Tsunetane", "label": "Chiba Tsunetane", "linked_nodes": ["Chiba Clan"]},
 
     {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
@@ -87,7 +87,7 @@ var nodes_list = [
   {"id": "Goju Ryu", "label": "Goju Ryu", "linked_nodes": ["Gogen Yamaguchi"]},
   
   // Uechi Ryu
-  {"id": "Wai Xinxian", "label": "Wai Xinxian", "linked_nodes": ["Arakaki Seisho"]},
+  {"id": "Wai Xinxian", "label": "Wai Xinxian", "linked_nodes": ["Arakaki Seisho", "Kogusuku Taitei"]},
   {"id": "Arakaki Seisho", "label": "Arakaki Seisho", "linked_nodes": ["Uechi Kanbun", "Higaonna Kanryo"]},
   {"id": "Uechi Kanbun", "label": "Uechi Kanbun", "linked_nodes": ["Pangal-noon (Uechi Ryu)"]},
 
@@ -102,7 +102,6 @@ var nodes_list = [
   {"id": "San Shoi", "label": "San Shoi", "linked_nodes": ["Kogusuku Isei"]},
   {"id": "Iwah", "label": "Iwah", "linked_nodes": ["Kogusuku Isei"]},
 
-  {"id": "Waishinzan", "label": "Waishinzan", "linked_nodes": ["Kogusuku Taitei"]},
 
   // Kojo Ryu
   {"id": "Kogusuku Isei", "label": "Kogusuku Isei", "linked_nodes": ["Kogusuku Kaho"]},
@@ -162,7 +161,7 @@ var nodes_list = [
   
   {"id": "Takenouchi Hisamori", "label": "Takenouchi Hisamori", "linked_nodes": ["Takenouchi Ryu"]},
   {"id": "Takenouchi Ryu", "label": "Takenouchi Ryu", "linked_nodes": ["Jujutsu"]},
-  {"id": "Jujutsu", "label": "Jujutsu", "linked_nodes": ["Yoshin Ryu"]},
+  {"id": "Jujutsu", "label": "Jujutsu", "linked_nodes": ["Yoshin Ryu", "Izumo Kanja Yoshiteru"]},
   {"id": "Yoshin Ryu", "label": "Yoshin Ryu", "linked_nodes": ["Yamamoto Tamiza Hideya"]},
   {"id": "Yamamoto Tamiza Hideya", "label": "Yamamoto o' Tamiza Hideya", "linked_nodes": ["Hitotsuyanagi Oribe", "Shin no Shinto-ryu"]},
   {"id": "Shin no Shinto-ryu", "label": "Shin no Shinto-ryu", "linked_nodes": ["Homma Jouemon"]},
@@ -763,13 +762,6 @@ const positionsList =
         "position": {
             "x": 1599.8810944216384,
             "y": -292.143670850504
-        }
-    },
-    {
-        "id": "Waishinzan",
-        "position": {
-            "x": 4351.8622816653515,
-            "y": 2262.0779416486516
         }
     },
     {
