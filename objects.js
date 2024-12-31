@@ -39,7 +39,8 @@ var nodes_list = [
   {"id": "Ji Sin", "label": "Ji Sin", "linked_nodes": ["Five Elder Families", "Leung Yee Tai"]},
   {"id": "Bak Mei", "label": "Bak Mei", "linked_nodes": ["Bak Mei Pai"]},
   
-  {"id": "Hakka", "label": "Hakka", "linked_nodes": ["Bak Mei Pai", "Southern Praying Mantis", "Southern Dragon", "Phoenix Eye Fist (Chuka Shaolin)"]},
+  {"id": "Hakka", "label": "Hakka", "linked_nodes": ["Bak Mei Pai", "Southern Praying Mantis", "Southern Dragon"]},
+  {"id": "Southern Praying Mantis", "label": "Southern Praying Mantis", "linked_nodes": ["Chow Gar", "Chu Gar (Chuka Shaolin)", "Bamboo Forest", "Iron Ox", "Hsiung Thong Long Quet Tsot"]},
   
   // Five Elder Families
   {"id": "Five Elder Families", "label": "Five Elder Families", "linked_nodes": ["Lau Saam Ngan", "Mok Ching Giu", "Hung Hei-gun", "Choy Gau Yi", "Lei Yau Saan"]},
