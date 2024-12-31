@@ -39,9 +39,17 @@ var nodes_list = [
   {"id": "Ji Sin", "label": "Ji Sin", "linked_nodes": ["Five Elder Families", "Leung Yee Tai"]},
   {"id": "Bak Mei", "label": "Bak Mei", "linked_nodes": ["Bak Mei Pai"]},
   
-  {"id": "Hakka", "label": "Hakka", "linked_nodes": ["Bak Mei Pai", "Southern Praying Mantis", "Southern Dragon"]},
-  {"id": "Southern Praying Mantis", "label": "Southern Praying Mantis", "linked_nodes": ["Chow Gar", "Chu Gar (Chuka Shaolin)", "Bamboo Forest", "Iron Ox", "Hsiung Thong Long Quet Tsot"]},
+  {"id": "Hakka", "label": "Hakka", "linked_nodes": ["Southern Praying Mantis", "Bak Mei Pai", "Southern Dragon"]},
+
+  {"id": "Chow Ah-Nam", "label": "Chow Ah-Nam", "linked_nodes": ["Wong Fook Go"]},
+  {"id": "Wong Fook Go", "label": "Wong Fook Go", "linked_nodes": ["Lau Soei"]},
+  {"id": "Lau Soei", "label": "Lau Soei", "linked_nodes": ["Chow Gar"]},
+  {"id": "Chu Fook-To", "label": "Chu Fook-To", "linked_nodes": ["Chu Gar (Chuka Shaolin)"]},
+  {"id": "Som Dot", "label": "Som Dot", "linked_nodes": ["Bamboo Forest"]},
+  {"id": "Hung Mei", "label": "Hung Mei", "linked_nodes": ["Iron Ox"]},
+  {"id": "Chen Kiu", "label": "Chen Kiu", "linked_nodes": ["Hsiung Thong Long Quet Tsot"]},
   
+  {"id": "Southern Praying Mantis", "label": "Southern Praying Mantis", "linked_nodes": ["Chow Ah-Nam", "Chu Fook-To", "Som Dot", "Hung Mei", "Chen Kiu"]},
   // Five Elder Families
   {"id": "Five Elder Families", "label": "Five Elder Families", "linked_nodes": ["Lau Saam Ngan", "Mok Ching Giu", "Hung Hei-gun", "Choy Gau Yi", "Lei Yau Saan"]},
   {"id": "Lau Saam Ngan", "label": "Lau Saam Ngan", "linked_nodes": ["Lau Ga"]},
