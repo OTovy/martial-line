@@ -25,8 +25,7 @@ var nodes_list = [
     {"id": "Samurai", "label": "Samurai", "linked_nodes": ["Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan"]},
 
   
-  {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Southern Shaolin", "Five Elders", "Tode"]},
-  {"id": "Southern Shaolin", "label": "Southern Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)"]},
+  {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)", "Five Elders", "Tode"]},
 
   // Five Elders
   {"id": "Five Elders", "label": "Five Elders", "linked_nodes": ["Miu Hin", "Fung Dou Dak", "Ng Mui", "Ji Sin", "Bak Mei"]},
@@ -411,13 +410,6 @@ const positionsList =
         "position": {
             "x": 4135.749502841043,
             "y": -1571.1759171842184
-        }
-    },
-    {
-        "id": "Southern Shaolin",
-        "position": {
-            "x": 3333.384213132116,
-            "y": -1313.9400453553883
         }
     },
     {
