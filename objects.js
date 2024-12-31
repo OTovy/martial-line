@@ -213,10 +213,14 @@ var nodes_list = [
   {"id": "Gogen Yamaguchi", "label": "Gogen Yamaguchi", "linked_nodes": ["Masutatsu Oyama"]},
   {"id": "Masutatsu Oyama", "label": "Masutatsu Oyama", "linked_nodes": ["Kyokushin Karate"]},
   
-  // Taichi
-  {"id": "Wudang", "label": "Wudang", "linked_nodes": ["Chen Tuan", "Zhang Sanfeng", "Lai"]},
+  {"id": "Wudang", "label": "Wudang", "linked_nodes": ["Chen Tuan", "Zhang Sanfeng", "Lai", "Zhou Tong"]},
   {"id": "Daoyin", "label": "Daoyin", "linked_nodes": ["Chen Wangting"]},
+  {"id": "Zhou Tong", "label": "Zhou Tong", "linked_nodes": ["Yue Fei"]},
+  {"id": "Yue Fei", "label": "Yue Fei", "linked_nodes": ["Xing Yi Quan", "Eagle Claw"]},
 
+
+
+  // Taichi
   {"id": "Qi Jiguang", "label": "Qi Jiguang", "linked_nodes": ["Jixiao Xinshu", "Lianbing Shiji"]},
   {"id": "Jixiao Xinshu", "label": "Jixiao Xinshu", "linked_nodes": ["Chen Wangting"]},
   {"id": "Lianbing Shiji", "label": "Lianbing Shiji", "linked_nodes": ["Chen Wangting"]},
