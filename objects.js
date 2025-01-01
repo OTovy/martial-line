@@ -248,9 +248,12 @@ var nodes_list = [
   {"id": "Zhang Zongyu", "label": "Zhang Zongyu", "linked_nodes": ["Zhang Yan"]},
   {"id": "Zhang Yan", "label": "Zhang Yan", "linked_nodes": ["Chen Qingping"]},
   {"id": "Chen Qingping", "label": "Chen Qingping", "linked_nodes": ["He Zhaoyuan", "Wu Yuxiang"]},
-
+  {"id": "He Zhaoyuan", "label": "He Zhaoyuan", "linked_nodes": ["He Qingxi"]},
+  {"id": "He Qingxi", "label": "He Qingxi", "linked_nodes": ["Song Yunhua"]},
+  {"id": "Song Yunhua", "label": "Song Yunhua", "linked_nodes": ["Zhaobao Style"]},
   {"id": "Chen Zhongshen", "label": "Chen Zhongshen", "linked_nodes": ["Chen Xin"]},
 
+  
   // Taichi Sun Style
   {"id": "Wu Yuxiang", "label": "Wu Yuxiang", "linked_nodes": ["Li Yiyu"]},
   {"id": "Li Yiyu", "label": "Li Yiyu", "linked_nodes": ["Hao Weizhen"]},
@@ -264,7 +267,6 @@ var nodes_list = [
   {"id": "Hao Shaoru", "label": "Hao Shaoru", "linked_nodes": ["Liu Jishun"]},  
   {"id": "Liu Jishun", "label": "Liu Jishun", "linked_nodes": ["Wu (Hao) Style"]},
 
-  {"id": "Song Yunhua", "label": "Song Yunhua", "linked_nodes": []},
 
   // Taichi Chen Small Frame
   {"id": "Chen Xin", "label": "Chen Xin", "linked_nodes": ["Chen Kezhong"]},
