@@ -94,25 +94,16 @@ style: [
         'target-arrow-color': '#ffffff' // Optional: Change arrow color
       }
     },
+    // Highlighted connected node style
     {
-      selector: 'node:selected ~ edge ~ node',
+      selector: '.highlighted-connected-node',
       style: {
-        'color': '#ffffff',
-        'font-weight': 'bold', // Make the font bold
-        'background-color': '#2a2a2a',
-        'border-width': 6, // Wider border when selected
-        'border-color': '#ffffff' // Optional: Change border color
+        'background-color': '#ffa500',
+        'width': 50,
+        'height': 50
       }
-    },
-  {
-      selector: 'node:selected ~ edge',
-      style: {
-        'width': 4, // Wider edge line when selected
-        'line-color': '#ffffff', // Optional: Change edge color
-        'arrow-scale': 3,
-        'target-arrow-color': '#ffffff' // Optional: Change arrow color
-      }
-  }
+    }
+  
 ],
   layout: {
     name: 'dagre', // 'cose' is a force-directed layout
@@ -138,3 +129,41 @@ cy.on('free', 'node', function () {
   console.log('Node positions after drop:', nodePositions);
 });
 
+//
+
+  
+
+
+
+
+// Highlight connected elements on node select
+cy.on('select', 'node', (event) => {
+  const node = event.target;
+
+  // Highlight the selected node
+ // node.addClass('highlighted-node');
+
+  // Highlight connected edges
+  const connectedEdges = node.connectedEdges();
+  connectedEdges.forEach(edge => edge.addClass('highlighted-edge'));
+
+  // Highlight connected nodes
+  const connectedNodes = connectedEdges.connectedNodes().filter(n => n.id() !== node.id());
+  connectedNodes.forEach(connectedNode => connectedNode.addClass('highlighted-connected-node'));
+});
+
+// Remove highlight on deselect
+cy.on('unselect', 'node', (event) => {
+  const node = event.target;
+
+  // Remove highlight from the selected node
+ // node.removeClass('highlighted-node');
+
+  // Remove highlight from connected edges
+  const connectedEdges = node.connectedEdges();
+  connectedEdges.forEach(edge => edge.removeClass('highlighted-edge'));
+
+  // Remove highlight from connected nodes
+  const connectedNodes = connectedEdges.connectedNodes().filter(n => n.id() !== node.id());
+  connectedNodes.forEach(connectedNode => connectedNode.removeClass('highlighted-connected-node'));
+});
