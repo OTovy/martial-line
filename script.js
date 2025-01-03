@@ -112,7 +112,28 @@ style: [
         'line-color': '#ffffff', // Optional: Change edge color
         'arrow-scale': 3,
         'target-arrow-color': '#ffffff'      }
-     } 
+     } ,
+  {
+    selector: '.highlighted-source-node',
+    style: {
+        'color': '#ffffff',
+        'font-weight': 'bold', // Make the font bold
+        'background-color': '#2a2a2a',
+        'border-width': 6, // Wider border when selected
+        'border-color': '#ffffff' 
+    }
+  },
+  // Highlighted target node style
+  {
+    selector: '.highlighted-target-node',
+    style: {
+        'color': '#ffffff',
+        'font-weight': 'bold', // Make the font bold
+        'background-color': '#2a2a2a',
+        'border-width': 6, // Wider border when selected
+        'border-color': '#ffffff' 
+    }
+  }
   
 ],
   layout: {
@@ -200,4 +221,31 @@ connectedEdgesBetweenNodes.forEach(edge => edge.removeClass('highlighted-edge'))
   
 });
 
+// Highlight nodes connected by a selected edge
+cy.on('select', 'edge', (event) => {
+  const edge = event.target;
+
+  // Highlight the selected edge
+  edge.addClass('highlighted-edge');
+
+  // Highlight the source and target nodes of the selected edge
+  const sourceNode = edge.source();
+  const targetNode = edge.target();
+  sourceNode.addClass('highlighted-source-node');
+  targetNode.addClass('highlighted-target-node');
+});
+
+// Remove highlight on edge deselect
+cy.on('unselect', 'edge', (event) => {
+  const edge = event.target;
+
+  // Remove highlight from the selected edge
+  edge.removeClass('highlighted-edge');
+
+  // Remove highlight from the source and target nodes of the deselected edge
+  const sourceNode = edge.source();
+  const targetNode = edge.target();
+  sourceNode.removeClass('highlighted-source-node');
+  targetNode.removeClass('highlighted-target-node');
+});
 
