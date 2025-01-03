@@ -44,12 +44,12 @@ style: [
   {
     selector: 'node',
     style: {
-      'border-color': '#ffffff',
+      'border-color': '#f0f0f0',
       'border-width': 2,
       'label': 'data(label)',
-      'color': '#ffffff',
+      'color': '#f0f0f0',
       'background-opacity': 0,
-      'background-color': '#2e2e2e',
+      'background-color': '#000000',
       'shape': 'ellipse', // This makes the node a circle
       'text-valign': 'center',
       'text-halign': 'center',
@@ -67,8 +67,8 @@ style: [
       'curve-style': 'bezier', // Use bezier style for curves
       'control-point-distance': 0, // Initial curve distance
       'width': 2,
-      'line-color': '#ffffff',
-      'target-arrow-color': '#ffffff',
+      'line-color': '#f0f0f0',
+      'target-arrow-color': '#f0f0f0',
       'target-arrow-shape': 'triangle',
       'z-index': 1,
 
