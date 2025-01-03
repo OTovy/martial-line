@@ -5,10 +5,23 @@ var nodes_list = [
   
    {"id": "xxxxx", "label": "xxxxx", "linked_nodes": ["xxxxx"]},
 
-
+   
   Onogawa Kisaburo
   */
 
+  // Plum Blossom 
+  {"id": "Yang Bing", "label": "Yang Bing", "linked_nodes": ["Meihua Quan (Plum Blossom Fist)"]},
+  {"id": "Feng Keshan", "label": "Feng Keshan", "linked_nodes": ["Meihua Quan (Plum Blossom Fist)"]},
+
+  {"id": "Meihua Quan (Plum Blossom Fist)", "label": "Meihua Quan (Plum Blossom Fist)", "linked_nodes": ["Meishan Quan", "Wan Fuzi", "Zhang Yimin", "De'ang Meihua Quan", "Han Kuisheng"]},
+
+  {"id": "Wan Fuzi", "label": "Wan Fuzi", "linked_nodes": ["Hunan Meihua Quan"]},
+  {"id": "Zhang Yimin", "label": "Zhang Yimin", "linked_nodes": ["Zhou Beitao"]},
+  {"id": "Zhou Beitao", "label": "Zhou Beitao", "linked_nodes": ["Emei Meihua Quan"]},
+
+  {"id": "Han Kuisheng", "label": "Han Kuisheng", "linked_nodes": ["Fu Xiushan"]},
+  {"id": "Fu Xiushan", "label": "Fu Xiushan", "linked_nodes": ["Meihua Jie Quan"]},
+  
   // Shuai Jiao
    {"id": "Jiaodi", "label": "Jiaodi", "linked_nodes": ["Jiao Li"]},
    {"id": "Jiao Li", "label": "Jiao Li", "linked_nodes": ["Ma Liang"]},
@@ -53,6 +66,10 @@ var nodes_list = [
   {"id": "Miu Hin", "label": "Miu Hin", "linked_nodes": ["Yim Wing Chun"]},
   {"id": "Ji Sin", "label": "Ji Sin", "linked_nodes": ["Five Elder Families", "Leung Yee Tai"]},
   {"id": "Bak Mei", "label": "Bak Mei", "linked_nodes": ["Bak Mei Pai"]},
+
+  // Wu Mei Pai
+  {"id": "Ng Mui", "label": "Ng Mui", "linked_nodes": ["Wu Mei Pai", "Huang Baolin"]},
+  {"id": "Huang Baolin", "label": "Huang Baolin", "linked_nodes": ["Gong Rongguang"]},
   
   {"id": "Hakka", "label": "Hakka", "linked_nodes": ["Southern Praying Mantis", "Bak Mei Pai", "Southern Dragon"]},
 
