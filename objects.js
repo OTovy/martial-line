@@ -12,18 +12,13 @@ var nodes_list = [
   // Shuai Jiao
    {"id": "Jiaodi", "label": "Jiaodi", "linked_nodes": ["Jiao Li"]},
    {"id": "Jiao Li", "label": "Jiao Li", "linked_nodes": ["Ma Liang"]},
-
    {"id": "Kangxi Emperor", "label": "Kangxi Emperor", "linked_nodes": ["Shanpuying"]},
-
-   {"id": "Shanpuying", "label": "Shanpuying", "linked_nodes": ["Jiao Li", "Wan Yongshun"]},
-   {"id": "Wan Yongshun", "label": "Wan Yongshun", "linked_nodes": ["Tianqiao Wrestling School"]},
-   {"id": "Tianqiao Wrestling School", "label": "Tianqiao Wrestling School", "linked_nodes": ["Wuxiangsheng"]},
-
+   {"id": "Shanpuying", "label": "Shanpuying", "linked_nodes": ["Jiao Li"]},
    {"id": "Ma Liang", "label": "Ma Liang", "linked_nodes": ["Central Guoshu Institute"]},
    {"id": "Central Guoshu Institute", "label": "Central Guoshu Institute", "linked_nodes": ["Shuai Jiao"]},
+
   
   // Sumo
-
    {"id": "Hosokawa Clan", "label": "Hosokawa Clan", "linked_nodes": ["Yoshida Family"]},
    {"id": "Sumo", "label": "Sumo", "linked_nodes": ["Dewanoumi Ichimon", "Nishonoseki Ichimon", "Takasago Ichimon", "Tokitsukaze Ichimon", "Isegahama Ichimon"]},
     {"id": "Tokitsukaze Ichimon", "label": "Tokitsukaze Ichimon", "linked_nodes": ["Isenoumi Heya"]},
