@@ -6,7 +6,6 @@ var nodes_list = [
    {"id": "xxxxx", "label": "xxxxx", "linked_nodes": ["xxxxx"]},
 
    
-  Onogawa Kisaburo
   */
 
   // Plum Blossom 
@@ -33,7 +32,7 @@ var nodes_list = [
   
   // Sumo
    {"id": "Hosokawa Clan", "label": "Hosokawa Clan", "linked_nodes": ["Yoshida Family"]},
-   {"id": "Sumo", "label": "Sumo", "linked_nodes": ["Dewanoumi Ichimon", "Nishonoseki Ichimon", "Takasago Ichimon", "Tokitsukaze Ichimon", "Isegahama Ichimon"]},
+   {"id": "Sumo", "label": "Sumo", "linked_nodes": ["Dewanoumi Ichimon", "Nishonoseki Ichimon", "Takasago Ichimon", "Tokitsukaze Ichimon", "Isegahama Ichimon", "Kusazuri Heya", "Onogawa Heya"]},
     {"id": "Tokitsukaze Ichimon", "label": "Tokitsukaze Ichimon", "linked_nodes": ["Isenoumi Heya"]},
     {"id": "Isenoumi Heya", "label": "Isenoumi Heya", "linked_nodes": ["Tanikaze Kajinosuke", "Nishikigi Tetsuya", "Wakaikari"]},
 
