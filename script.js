@@ -105,14 +105,7 @@ style: [
         'border-color': '#ffffff' // Optional: Change border color
       }
     },
-     {
-      selector: '.highlighted-edge',
-      style: {
-        'width': 4, // Wider edge line when selected
-        'line-color': '#ffffff', // Optional: Change edge color
-        'arrow-scale': 3,
-        'target-arrow-color': '#ffffff'      }
-     } ,
+
   {
     selector: '.highlighted-source-node',
     style: {
