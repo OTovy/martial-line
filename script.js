@@ -104,6 +104,15 @@ style: [
         'border-color': '#ffffff' // Optional: Change border color
       }
     },
+  {
+      selector: 'node:selected - edge',
+      style: {
+        'width': 4, // Wider edge line when selected
+        'line-color': '#ffffff', // Optional: Change edge color
+        'arrow-scale': 3,
+        'target-arrow-color': '#ffffff' // Optional: Change arrow color
+      }
+  }
 ],
   layout: {
     name: 'dagre', // 'cose' is a force-directed layout
