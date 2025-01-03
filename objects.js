@@ -5,8 +5,23 @@ var nodes_list = [
   
    {"id": "xxxxx", "label": "xxxxx", "linked_nodes": ["xxxxx"]},
 
+
   Onogawa Kisaburo
   */
+
+  // Shuai Jiao
+   {"id": "Jiaodi", "label": "Jiaodi", "linked_nodes": ["Jiao Li"]},
+   {"id": "Jiao Li", "label": "Jiao Li", "linked_nodes": ["Ma Liang"]},
+
+   {"id": "Kangxi Emperor", "label": "Kangxi Emperor", "linked_nodes": ["Shanpuying"]},
+
+   {"id": "Shanpuying", "label": "Shanpuying", "linked_nodes": ["Jiao Li", "Wan Yongshun"]},
+   {"id": "Wan Yongshun", "label": "Wan Yongshun", "linked_nodes": ["Tianqiao Wrestling School"]},
+   {"id": "Tianqiao Wrestling School", "label": "Tianqiao Wrestling School", "linked_nodes": ["Wuxiangsheng"]},
+
+   {"id": "Ma Liang", "label": "Ma Liang", "linked_nodes": ["Central Guoshu Institute"]},
+   {"id": "Central Guoshu Institute", "label": "Central Guoshu Institute", "linked_nodes": ["Shuai Jiao"]},
+  
   // Sumo
 
    {"id": "Hosokawa Clan", "label": "Hosokawa Clan", "linked_nodes": ["Yoshida Family"]},
@@ -25,7 +40,7 @@ var nodes_list = [
   
     {"id": "Samurai", "label": "Samurai", "linked_nodes": ["The Imperial Clan", "Takenouchi Hisamori", "Saigo Tanomo", "Sakakibara Kenkichi", "Date Clan", "Hosokawa Clan", "Miyamoto Musashi"]},
     {"id": "Miyamoto Musashi", "label": "Miyamoto Musashi", "linked_nodes": ["Niten Ichi Ryu"]},
-  {"id": "The Imperial Clan", "label": "The Imperial Clan", "linked_nodes": ["Gempeitokitsu"]},
+    {"id": "The Imperial Clan", "label": "The Imperial Clan", "linked_nodes": ["Gempeitokitsu"]},
     {"id": "Gempeitokitsu", "label": "Gempeitokitsu", "linked_nodes": ["Taira Clan", "Minamoto Clan", "Fujiwara Clan", "Tachibana Clan"]},
     {"id": "Taira Clan", "label": "Taira Clan", "linked_nodes": ["Chiba Tsunetane"]},
     {"id": "Chiba Tsunetane", "label": "Chiba Tsunetane", "linked_nodes": ["Chiba Clan"]},
