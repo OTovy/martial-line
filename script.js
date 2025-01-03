@@ -95,7 +95,7 @@ style: [
       }
     },
     {
-      selector: 'node:selected - edge - node',
+      selector: 'node:selected ~ edge ~ node',
       style: {
         'color': '#ffffff',
         'font-weight': 'bold', // Make the font bold
@@ -105,7 +105,7 @@ style: [
       }
     },
   {
-      selector: 'node:selected - edge',
+      selector: 'node:selected ~ edge',
       style: {
         'width': 4, // Wider edge line when selected
         'line-color': '#ffffff', // Optional: Change edge color
