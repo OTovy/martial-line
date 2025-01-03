@@ -51,9 +51,19 @@ var nodes_list = [
     {"id": "Gempeitokitsu", "label": "Gempeitokitsu", "linked_nodes": ["Taira Clan", "Minamoto Clan", "Fujiwara Clan", "Tachibana Clan"]},
     {"id": "Taira Clan", "label": "Taira Clan", "linked_nodes": ["Chiba Tsunetane"]},
     {"id": "Chiba Tsunetane", "label": "Chiba Tsunetane", "linked_nodes": ["Chiba Clan"]},
+    {"id": "Minamoto Clan", "label": "Minamoto Clan", "linked_nodes": ["Matsudaira Clan", "Sasaki Clan"]},
+    {"id": "Matsudaira Clan", "label": "Matsudaira Clan", "linked_nodes": ["Tokugawa Clan"]},
+    {"id": "Tokugawa Clan", "label": "Matsudaira Clan", "linked_nodes": ["Hattori Hanzo"]},
+    {"id": "Hattori Hanzo", "label": "Hattori Hanzo", "linked_nodes": ["beatrix kiddo"]},
+  {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
 
-    {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
+     {"id": "Iga Ikki", "label": "Iga Ikki", "linked_nodes": ["Iga Ryu"]},
+     {"id": "Iga Ryu", "label": "Iga Ryu", "linked_nodes": ["Momochi Sandayu", "Fujibayashi Nagato", "Tateoka Doshun"]},
 
+     {"id": "Koga Ikki", "label": "Koga Ikki", "linked_nodes": ["Koga Ryu"]},
+   {"id": "Sasaki Clan", "label": "Sasaki Clan", "linked_nodes": ["Rokkaku Clan"]},
+
+  
   // Shaolin
   {"id": "Bodhidharma", "label": "Bodhidharma", "linked_nodes": ["Dazu Huike", "Shaolin"]},
   {"id": "Dazu Huike", "label": "Dazu Huike", "linked_nodes": ["Shaolin"]},
