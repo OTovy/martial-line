@@ -93,7 +93,17 @@ style: [
         'arrow-scale': 3,
         'target-arrow-color': '#ffffff' // Optional: Change arrow color
       }
-    }  
+    },
+    {
+      selector: 'node:selected - edge - node',
+      style: {
+        'color': '#ffffff',
+        'font-weight': 'bold', // Make the font bold
+        'background-color': '#2a2a2a',
+        'border-width': 6, // Wider border when selected
+        'border-color': '#ffffff' // Optional: Change border color
+      }
+    },
 ],
   layout: {
     name: 'dagre', // 'cose' is a force-directed layout
