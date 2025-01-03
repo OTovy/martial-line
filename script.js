@@ -141,7 +141,7 @@ cy.on('select', 'node', (event) => {
   const node = event.target;
 
   // Highlight the selected node
- // node.addClass('highlighted-node');
+  node.addClass('highlighted-node');
 
   // Highlight connected edges
   const connectedEdges = node.connectedEdges();
@@ -157,7 +157,7 @@ cy.on('unselect', 'node', (event) => {
   const node = event.target;
 
   // Remove highlight from the selected node
- // node.removeClass('highlighted-node');
+  node.removeClass('highlighted-node');
 
   // Remove highlight from connected edges
   const connectedEdges = node.connectedEdges();
