@@ -2,7 +2,8 @@
 var nodes_list = [
 
   /*
-
+  
+   {"id": "xxxxx", "label": "xxxxx", "linked_nodes": ["xxxxx"]},
 
   Onogawa Kisaburo
   */
@@ -31,7 +32,11 @@ var nodes_list = [
 
     {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
 
-   {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)", "Five Elders", "Tode"]},
+  // Shaolin
+  {"id": "Bodhidharma", "label": "Bodhidharma", "linked_nodes": ["Dazu Huike", "Shaolin"]},
+  {"id": "Dazu Huike", "label": "Dazu Huike", "linked_nodes": ["Shaolin"]},
+  {"id": "Butuo Buddhabhadra", "label": "Butuo Buddhabhadra", "linked_nodes": ["Shaolin"]},
+  {"id": "Shaolin", "label": "Shaolin", "linked_nodes": ["Luo Han Quan (Monk Fist)", "Five Elders", "Tode"]},
 
   // Five Elders
   {"id": "Five Elders", "label": "Five Elders", "linked_nodes": ["Miu Hin", "Fung Dou Dak", "Ng Mui", "Ji Sin", "Bak Mei"]},
