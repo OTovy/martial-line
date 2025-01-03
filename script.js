@@ -61,6 +61,17 @@ style: [
       'text-max-width': '55px' // Set a maximum width for wrapped text
     }
   },
+    {
+      selector: 'node:selected',
+      style: {
+        'color': '#ffffff',
+        'font-weight': 'bold', // Make the font bold
+        'background-color': '#2a2a2a',
+        'border-width': 6, // Wider border when selected
+        'border-color': '#ffffff' // Optional: Change border color
+      }
+    },
+  
   {
     selector: 'edge',
     style: {
@@ -73,7 +84,16 @@ style: [
       'z-index': 1,
 
     }
-  }
+  },
+{
+      selector: 'edge:selected',
+      style: {
+        'width': 4, // Wider edge line when selected
+        'line-color': '#ffffff', // Optional: Change edge color
+        'arrow-scale': 3,
+        'target-arrow-color': '#ffffff' // Optional: Change arrow color
+      }
+    }  
 ],
   layout: {
     name: 'dagre', // 'cose' is a force-directed layout
