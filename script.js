@@ -98,9 +98,11 @@ style: [
     {
       selector: '.highlighted-connected-node',
       style: {
-        'background-color': '#ffa500',
-        'width': 50,
-        'height': 50
+        'color': '#ffffff',
+        'font-weight': 'bold', // Make the font bold
+        'background-color': '#2a2a2a',
+        'border-width': 6, // Wider border when selected
+        'border-color': '#ffffff' // Optional: Change border color
       }
     }
   
