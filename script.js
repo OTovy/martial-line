@@ -169,3 +169,35 @@ cy.on('unselect', 'node', (event) => {
   const connectedNodes = connectedEdges.connectedNodes().filter(n => n.id() !== node.id());
   connectedNodes.forEach(connectedNode => connectedNode.removeClass('highlighted-connected-node'));
 });
+
+
+cy.on('select', 'edge', (event) => {
+  const node = event.target;
+
+  // Highlight the selected node
+  node.addClass('highlighted-node');
+
+  // Highlight connected edges
+  const connectedEdges = node.connectedEdges();
+  connectedEdges.forEach(edge => edge.addClass('highlighted-edge'));
+
+  // Highlight connected nodes
+  const connectedNodes = connectedEdges.connectedNodes().filter(n => n.id() !== node.id());
+  connectedNodes.forEach(connectedNode => connectedNode.addClass('highlighted-connected-node'));
+});
+
+// Remove highlight on deselect
+cy.on('unselect', 'edge', (event) => {
+  const node = event.target;
+
+  // Remove highlight from the selected node
+  node.removeClass('highlighted-node');
+
+  // Remove highlight from connected edges
+  const connectedEdges = node.connectedEdges();
+  connectedEdges.forEach(edge => edge.removeClass('highlighted-edge'));
+
+  // Remove highlight from connected nodes
+  const connectedNodes = connectedEdges.connectedNodes().filter(n => n.id() !== node.id());
+  connectedNodes.forEach(connectedNode => connectedNode.removeClass('highlighted-connected-node'));
+});
