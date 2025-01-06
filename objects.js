@@ -58,7 +58,7 @@ var nodes_list = [
     {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
 
   // Ninjitsu
-  {"id": "Ninjitsu", "label": "Ninjitsu", "linked_nodes": ["Iga Ryu", "Koga Ryu", "Togakure Ryu"]},
+  {"id": "Ninjutsu", "label": "Ninjutsu", "linked_nodes": ["Iga Ryu", "Koga Ryu", "Togakure Ryu"]},
   {"id": "Nishina Clan", "label": "Nishina Clan", "linked_nodes": ["Daisuke Nishina"]},
   {"id": "Kain Doshi", "label": "Kain Doshi", "linked_nodes": ["Daisuke Nishina"]},
   {"id": "Daisuke Nishina", "label": "Daisuke Nishina", "linked_nodes": ["Togakure Ryu", "Shima Kosanta Minamoto no Kanesada"]},
@@ -675,7 +675,7 @@ const positionsList =
         }
     },
     {
-        "id": "Ninjitsu",
+        "id": "Ninjutsu",
         "position": {
             "x": 11473.728266908609,
             "y": 7235.892983590907
