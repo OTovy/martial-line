@@ -158,7 +158,7 @@ var nodes_list = [
   {"id": "Ip Man", "label": "Ip Man", "linked_nodes": ["Bruce Lee"]},
   {"id": "Bruce Lee", "label": "Bruce Lee", "linked_nodes": ["Jeet Kune Do", "Joseph Cowles"]},
   {"id": "Joseph Cowles", "label": "Joseph Cowles", "linked_nodes": ["Wu Wei"]},
-  {"id": "Wing Chun", "label": "Wing Chun", "linked_nodes": ["Hwang Kee"]},
+  {"id": "Wing Chun", "label": "Wing Chun", "linked_nodes": ["Leung Ting"]},
 
   // Tibetean White Crane
   {"id": "Lama Pai (Lions Roar)", "label": "Lama Pai (Lions Roar)", "linked_nodes": ["Adatuo"]},
@@ -416,6 +416,8 @@ var nodes_list = [
   
 {"id": "Ro Byung Jik", "label": "Ro Byung Jik", "linked_nodes": ["Song Moo Kwan"]},
 
+
+{"id": "Yang Kuk Jin", "label": "Yang Kuk Jin", "linked_nodes": ["Hwang Kee"]},
 {"id": "Subak", "label": "Subak", "linked_nodes": ["Taekkyon"]},
 {"id": "Taekkyon", "label": "Taekkyon", "linked_nodes": ["Lee Won-kuk", "Hwang Kee"]},
 {"id": "Hwang Kee", "label": "Hwang Kee", "linked_nodes": ["Moo Duk Kwan"]},
