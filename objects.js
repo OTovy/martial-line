@@ -3446,6 +3446,174 @@ const positionsList =
             "x": -3784.4082634498204,
             "y": -815.773701023331
         }
+    },
+    {
+        "id": "special-Samurai-The Imperial Clan",
+        "position": {
+            "x": 10355.185652449672,
+            "y": 5613.642718519571
+        }
+    },
+    {
+        "id": "special-Samurai-Takenouchi Hisamori",
+        "position": {
+            "x": 9838.734730682303,
+            "y": 1927.3953497051905
+        }
+    },
+    {
+        "id": "special-Samurai-Sakakibara Kenkichi",
+        "position": {
+            "x": 9433.99637513158,
+            "y": 5430.0222127473935
+        }
+    },
+    {
+        "id": "special-Minamoto Clan-Nishina Clan",
+        "position": {
+            "x": 11435.221173858845,
+            "y": 6721.5572220058075
+        }
+    },
+    {
+        "id": "special-Shaolin-Five Elders",
+        "position": {
+            "x": 4137.840278838659,
+            "y": -655.9256704148978
+        }
+    },
+    {
+        "id": "special-Shaolin-Tode",
+        "position": {
+            "x": 2797.020634100655,
+            "y": -1533.4085042031
+        }
+    },
+    {
+        "id": "special-Luo Han Quan (Monk Fist)-Arakaki Seisho",
+        "position": {
+            "x": 2678.2515644465407,
+            "y": -613.4163084747503
+        }
+    },
+    {
+        "id": "special-Tode-Tomari Te",
+        "position": {
+            "x": -671.7746149233942,
+            "y": -1211.0850058318367
+        }
+    },
+    {
+        "id": "special-Tode-Shuri Te",
+        "position": {
+            "x": 618.188651548141,
+            "y": -1190.7160096532764
+        }
+    },
+    {
+        "id": "special-Kousaku Matsumora-Choki Motobu",
+        "position": {
+            "x": -2293.2581062189056,
+            "y": -514.1252127871379
+        }
+    },
+    {
+        "id": "special-Kanga Sakugawa-Sokon Matsumura",
+        "position": {
+            "x": -199.19916365493688,
+            "y": -112.3366966553757
+        }
+    },
+    {
+        "id": "special-Sokon Matsumura-Choyu Motobu",
+        "position": {
+            "x": -861.9534947905215,
+            "y": -134.0346967657929
+        }
+    },
+    {
+        "id": "special-Sokon Matsumura-Chotoku Kyan",
+        "position": {
+            "x": -1141.450552971551,
+            "y": 247.55886525059648
+        }
+    },
+    {
+        "id": "special-Sokon Matsumura-Choki Motobu",
+        "position": {
+            "x": -984.5441331783313,
+            "y": 28.999469908535133
+        }
+    },
+    {
+        "id": "special-Choki Motobu-Shoshin Nagamine",
+        "position": {
+            "x": -2353.2581062189056,
+            "y": -316.12521278713837
+        }
+    },
+    {
+        "id": "special-Gichin Funakoshi-Gigo Funakoshi",
+        "position": {
+            "x": 1068.359608307498,
+            "y": 622.2216682496128
+        }
+    },
+    {
+        "id": "special-Gichin Funakoshi-Chun Sang Sup",
+        "position": {
+            "x": 127.67466122236358,
+            "y": 3022.3371332499337
+        }
+    },
+    {
+        "id": "special-Tenjin Shinyo Ryu-Kentaro Inoue",
+        "position": {
+            "x": 7769.1879780979325,
+            "y": 2075.3406818143335
+        }
+    },
+    {
+        "id": "special-Kano Jigoro-Kodokan Judo",
+        "position": {
+            "x": 7558.5935551595685,
+            "y": 1763.1060871978418
+        }
+    },
+    {
+        "id": "special-Kodokan Judo-Yun Mu Kwan",
+        "position": {
+            "x": 3761.984683678643,
+            "y": 3632.8777243195636
+        }
+    },
+    {
+        "id": "special-Takisaburo Tobari-Morihei Ueshiba",
+        "position": {
+            "x": 8190.33183661182,
+            "y": 4410.977848050554
+        }
+    },
+    {
+        "id": "special-Wudang-Lai",
+        "position": {
+            "x": -4857.097944694625,
+            "y": -1157.9948474375394
+        }
+    },
+    {
+        "id": "special-Chen Youben-Chen Zhongshen",
+        "position": {
+            "x": -4907.976268875912,
+            "y": 729.1998432170758
+        }
+    },
+    {
+        "id": "special-Yang Kuk Jin-Hwang Kee",
+        "position": {
+            "x": -2986.645411658472,
+            "y": 1654.4275327628802
+        }
     }
 ]
   ;
