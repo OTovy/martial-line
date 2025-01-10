@@ -134,8 +134,19 @@ style: [
         'border-width': 6, // Wider border when selected
         'border-color': '#ffffff' 
     }
-  }
-  
+  },
+    {
+      selector: '.special-connecting-node',
+      style: {
+        'background-color': '#A9A9A9',  // Custom color for special nodes
+        'background-opacity': 1,
+        'width': '5px',          // Width of the node (circle's diameter)
+        'height': '5px',
+        'border-color': '#A9A9A9',
+        'border-width': 0
+      }
+    }
+
 ],
   layout: {
     name: 'dagre', // 'cose' is a force-directed layout
@@ -192,7 +203,7 @@ const connectedEdgesBetweenNodes = cy.edges().filter(edge => {
   );
 });
 connectedEdgesBetweenNodes.forEach(edge => edge.addClass('highlighted-edge'));
-  
+
 });
 
 // Remove highlight on deselect
@@ -219,7 +230,7 @@ const connectedEdgesBetweenNodes = cy.edges().filter(edge => {
   );
 });
 connectedEdgesBetweenNodes.forEach(edge => edge.removeClass('highlighted-edge'));
-  
+
 });
 
 // Highlight nodes connected by a selected edge
@@ -249,4 +260,57 @@ cy.on('unselect', 'edge', (event) => {
   sourceNode.removeClass('highlighted-source-node');
   targetNode.removeClass('highlighted-target-node');
 });
+
+
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+// ##################################################
+
+function addSpecialNodesForLongEdges(threshold) {
+  cy.edges().forEach(edge => {
+    const sourceNode = edge.source();
+    const targetNode = edge.target();
+
+    // Calculate the Euclidean distance between source and target nodes
+    const dx = targetNode.position('x') - sourceNode.position('x');
+    const dy = targetNode.position('y') - sourceNode.position('y');
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    // Check if the distance exceeds the threshold
+    if (distance > threshold) {
+      // Generate a unique ID for the special node
+      const specialNodeId = `special-${sourceNode.id()}-${targetNode.id()}`;
+
+      // Add the special node
+      cy.add({
+        group: 'nodes',
+        data: { id: specialNodeId, label: '' },
+        position: {
+          x: (sourceNode.position('x') + targetNode.position('x')) / 2,
+          y: (sourceNode.position('y') + targetNode.position('y')) / 2
+        },
+        classes: 'special-connecting-node'
+      });
+
+      // Remove the original edge
+      edge.remove();
+
+      // Add new edges to connect the source node to the special node and the special node to the target node
+      cy.add([
+        { group: 'edges', data: { source: sourceNode.id(), target: specialNodeId } },
+        { group: 'edges', data: { source: specialNodeId, target: targetNode.id() } }
+      ]);
+    }
+  });
+}
+
+// Call the function with the threshold length
+addSpecialNodesForLongEdges(1000);
 
