@@ -58,7 +58,7 @@ var nodes_list = [
     {"id": "Chiba Clan", "label": "Chiba Clan", "linked_nodes": ["Iizasa Choisai Ienao"]},
 
   // Ninjitsu
-  {"id": "Ninjutsu", "label": "Ninjutsu", "linked_nodes": ["Iga Ryu", "Koga Ryu", "Togakure Ryu"]},
+  {"id": "Ninjutsu", "label": "Ninjutsu", "linked_nodes": ["Iga Ryu", "Koga Ryu", "Togakure Ryu", "Oroku Saki", "Hamato Yoshi"]},
   {"id": "Nishina Clan", "label": "Nishina Clan", "linked_nodes": ["Daisuke Nishina"]},
   {"id": "Kain Doshi", "label": "Kain Doshi", "linked_nodes": ["Daisuke Nishina"]},
   {"id": "Daisuke Nishina", "label": "Daisuke Nishina", "linked_nodes": ["Togakure Ryu", "Shima Kosanta Minamoto no Kanesada"]},
@@ -436,6 +436,7 @@ var nodes_list = [
 
 
 const positionsList = 
+
 [
     {
         "id": "Yang Bing",
@@ -706,22 +707,22 @@ const positionsList =
     {
         "id": "Iga Ikki",
         "position": {
-            "x": 11564.764629689278,
-            "y": 7345.910965392464
+            "x": 11588.246277019327,
+            "y": 7495.746238831834
         }
     },
     {
         "id": "Iga Ryu",
         "position": {
-            "x": 11559.840634983084,
-            "y": 7478.759050574738
+            "x": 11564.313329712617,
+            "y": 7695.684744957108
         }
     },
     {
         "id": "Koga Ikki",
         "position": {
-            "x": 11395.101661925652,
-            "y": 7332.574319602988
+            "x": 11379.447230372285,
+            "y": 7495.827677230957
         }
     },
     {
@@ -2694,8 +2695,8 @@ const positionsList =
     {
         "id": "Koga Ryu",
         "position": {
-            "x": 11433.083552201922,
-            "y": 7466.416857511247
+            "x": 11437.556246931455,
+            "y": 7683.342551893617
         }
     },
     {
@@ -2706,24 +2707,38 @@ const positionsList =
         }
     },
     {
+        "id": "Oroku Saki",
+        "position": {
+            "x": 11217.56679507631,
+            "y": 7352.032827966325
+        }
+    },
+    {
+        "id": "Hamato Yoshi",
+        "position": {
+            "x": 11337.223016505342,
+            "y": 7355.387349013476
+        }
+    },
+    {
         "id": "Momochi Sandayu",
         "position": {
-            "x": 11446.872573929511,
-            "y": 7653.142347884531
+            "x": 11451.345268659044,
+            "y": 7870.068042266901
         }
     },
     {
         "id": "Fujibayashi Nagato",
         "position": {
-            "x": 11559.860844705023,
-            "y": 7648.041644131062
+            "x": 11564.333539434556,
+            "y": 7864.967338513432
         }
     },
     {
         "id": "Tateoka Doshun",
         "position": {
-            "x": 11691.860844705023,
-            "y": 7648.041644131062
+            "x": 11696.333539434556,
+            "y": 7864.967338513432
         }
     },
     {
@@ -3457,8 +3472,8 @@ const positionsList =
     {
         "id": "special-Samurai-Takenouchi Hisamori",
         "position": {
-            "x": 9838.734730682303,
-            "y": 1927.3953497051905
+            "x": 8933.591873539446,
+            "y": 2441.1250794349203
         }
     },
     {
@@ -3616,6 +3631,7 @@ const positionsList =
         }
     }
 ]
+
   ;
 
 export { nodes_list, positionsList };  
