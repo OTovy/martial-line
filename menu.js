@@ -18,6 +18,7 @@ const menuHTML = `
                 <li><a href="/martial-line/articles/martial_practice_paradox.html">The Paradox of Martial Practice</a></li>
                 <li><a href="/martial-line/articles/slow_motion.html">The Slow-Motion Principle</a></li>
                 <li><a href="/martial-line/articles/cold_weapon_defence.html">Cold Weapon Defence</a></li>
+                <li><a href="/martial-line/articles/battle_stance.html">Battle Layout Orientation</a></li>
             </ul>
         </li>
     </ul>
