@@ -15,6 +15,7 @@ const menuHTML = `
             <button class="dropdown-btn">Articles ▼</button>
             <ul class="dropdown-content">
                 <li><a href="/martial-line/articles/fighting_violence.html">Fighting Violence</a></li>
+                <li><a href="/martial-line/articles/martial_practice_paradox.html">The Paradox of Martial Practice</a></li>
                 <li><a href="/martial-line/articles/slow_motion.html">The Slow-Motion Principle</a></li>
             </ul>
         </li>
