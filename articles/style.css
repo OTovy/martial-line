@@ -1,0 +1,129 @@
+/* GENERAL PAGE STYLING */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#mynetwork {
+    width: 100%;
+    height: 100%;
+}
+
+/* SIDEBAR BUTTON */
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2001;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* SIDEBAR */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 2000;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    border-bottom: 1px solid #333;
+}
+
+.side-menu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 1500;
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* DROPDOWN */
+.dropdown {
+    padding: 0;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #181818;
+    transition: max-height 0.3s ease;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Dropdown open state */
+.dropdown.open .dropdown-content {
+    max-height: 300px;
+}
+
+.dropdown.open .dropdown-btn {
+    background: #222;
+}
