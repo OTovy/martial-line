@@ -7,14 +7,14 @@ const menuHTML = `
 <!-- Sidebar -->
 <nav id="sideMenu" class="side-menu">
     <ul>
-        <li><a href="index.html">Martial Line Constellation</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="/martial-line/index.html">Martial Line Constellation</a></li>
+        <li><a href="/martial-line/about.html">About</a></li>
 
         <!-- DROPDOWN -->
         <li class="dropdown">
             <button class="dropdown-btn">Articles ▼</button>
             <ul class="dropdown-content">
-                <li><a href="articles/slow_motion.html">The Slow-Motion Principle</a></li>
+                <li><a href="/martial-line/articles/slow_motion.html">The Slow-Motion Principle</a></li>
             </ul>
         </li>
     </ul>
