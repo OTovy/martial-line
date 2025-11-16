@@ -19,6 +19,14 @@ h1 {
     height: 100%;
 }
 
+
+.page-container {
+    max-width: 800px;       /* controls line width, like ChatGPT */
+    margin: 0 auto;         /* centers it */
+    padding: 20px;          /* space on the sides */
+    box-sizing: border-box; /* ensures padding doesn’t expand width */
+}
+
 /* SIDEBAR BUTTON */
 .menu-btn {
     position: fixed;
@@ -110,8 +118,10 @@ h1 {
 }
 
 .dropdown-content li {
-    padding: 12px 20px;
+    padding: 0;
     border-bottom: 1px solid #333;
+}
+
 }
 
 .dropdown-content li a {
