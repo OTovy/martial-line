@@ -33,7 +33,6 @@ const menuHTML = `
 
 document.getElementById("menu-container").innerHTML = menuHTML;
 
-
 // -------- MENU BEHAVIOR --------
 
 // Sidebar toggle
